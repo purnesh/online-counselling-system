@@ -46,12 +46,12 @@ describe('Home Page Tests', function () {
             expect(controller).not.toBeNull();
         });
 
-        it('should contain at least one menu value', function()
-        {
-            expect($scope.entries.length).not.toBeNull();
+        it('should contain the link to home page', function () {
+           expect($scope.entries).toEqual(jasmine.arrayContaining([{name: "Home",href: "index.html", id: "home-tab-navbar"}]));
         });
-
 
     });
 
 });
+
+//Use xit or xdescribe to temporarily disable tests from running
