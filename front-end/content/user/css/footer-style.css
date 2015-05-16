@@ -18,6 +18,9 @@ body {
     background-color: #f5f5f5;
 }
 
+#footer-text-non-muted{
+    color: black;
+}
 
 /* Custom page CSS
 -------------------------------------------------- */

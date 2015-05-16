@@ -47,7 +47,19 @@ describe('Home Page Tests', function () {
         });
 
         it('should contain the link to home page', function () {
-           expect($scope.entries).toEqual(jasmine.arrayContaining([{name: "Home",href: "index.html", id: "home-tab-navbar"}]));
+           expect($scope.navBarEntries).toEqual(jasmine.arrayContaining([{
+               name: "Home",
+               href: "#",
+               id: "home-tab-navbar"
+           }]));
+        });
+
+        it('should contain the link to login or register', function () {
+            expect($scope.navBarEntries).toEqual(jasmine.arrayContaining([{
+                name: "Login/Register",
+                href: "#",
+                id: "login-register-navbar"
+            }]));
         });
 
     });

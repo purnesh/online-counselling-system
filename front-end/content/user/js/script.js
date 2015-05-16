@@ -6,36 +6,70 @@ var ocs = angular.module('cotocs', []);
 
 /*
  ======================================
- headerDisplayHandler Controller BEGINS
- This function will be responsible for defining all the background variables for header
+ SERVICE globalDetails BEGINS
+ This function will be responsible for defining all global variables for the project
  */
-ocs.controller('headerDisplayHandler', function($scope){
-    $scope.displayData = {title: "Online Counselling System",
-                            author: "Purnesh Tripathi"};
+ocs.service('globalDetails', function () {
+    this.projectTitle = "Online Counselling System";
+    this.projectAuthor = "Purnesh Tripathi";
 });
 /*
- headerDisplayHandler Controller ENDS
+ ======================================
+ SERVICE globalDetails ENDS
+ This function will be responsible for defining all global variables for the project
+ */
+
+
+/*
+ ======================================
+ CONTROLLER headerDisplayHandler BEGINS
+ This function will be responsible for defining all the background variables for header
+ */
+ocs.controller('headerDisplayHandler', function($scope, globalDetails){
+    $scope.displayData = {title: globalDetails.projectTitle,
+                            author: globalDetails.projectAuthor};
+});
+/*
+ CONTROLLER headerDisplayHandler ENDS
  This function will be responsible for defining all the background variables for header
  ======================================
  */
 
 /*
  ======================================
- navigationBarHandler Controller BEGINS
+ CONTROLLER navigationBarHandler BEGINS
  This function will be responsible for defining all functions of the Navigation Bar
  */
-ocs.controller('navigationBarHandler', function($scope) {
-    $scope.projectTitle = "Online Counselling System";
+ocs.controller('navigationBarHandler', function($scope, globalDetails) {
+    $scope.projectTitle = globalDetails.projectTitle;
 
-    $scope.entries = [{name: "Home",
-                        href: "index.html",
-                        id: "home-tab-navbar"},
-                    {name: "Rules",
-                        href: "rules.html",
-                        id: "rules-tab-navbar"}];
+    $scope.navBarEntries = [{
+                                name: "Home",
+                                href: "#",
+                                id: "home-tab-navbar"
+                            },
+                            {
+                                name: "Documents Required",
+                                href: "#",
+                                id: "documents-required-navbar"
+                            },
+                            {
+                                name: "Rules",
+                                href: "#",
+                                id: "rules-tab-navbar"
+                            },
+                            {
+                                name: "Login/Register",
+                                href: "#",
+                                id: "login-register-navbar"
+                            }];
+    $scope.selectedEntry = 0;
+    $scope.selectEntry = function(row){
+        $scope.selectedEntry = row;
+    }
 });
 /*
- navigationBarHandler Controller ENDS
+ CONTROLLER navigationBarHandler ENDS
  This function will be responsible for defining all functions of the Navigation Bar
  ======================================
  */
