@@ -44,11 +44,21 @@
 
 <!-- BEGIN page content -->
 <div class="container">
-    <div class="page-header">
-        <h2>Welcome to <span ng-bind="projectTitle"></span></h2>
-    </div>
-    <p class="lead">This is the counselling platform for students appeared in JEE - 2015 for admission in
-    <span ng-bind="collegeName"></span>. </p>
+
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
 </div>
 <!-- END Page Content -->
 

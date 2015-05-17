@@ -5,9 +5,11 @@ describe('Home Page Tests', function () {
 
 //    Service testing is not yet complete. NEED TO LEARN HOW TO TEST SERVICES
     describe('globalDetails Service', function () {
-        var $scope;
-        beforeEach(module('cotocs'));
-
+        xit('should set Global Author Name', function () {
+            var $injector = angular.injector(['cotocs']);
+            var service = $injector.get('globalDetails');
+            expect(service.projectAuthor).toBe('Purnesh Tripathi');
+        });
     });
 
 
@@ -40,7 +42,6 @@ describe('Home Page Tests', function () {
     describe('universalHandler Controller', function(){
         var $scope;
         beforeEach(module('cotocs'));
-
         beforeEach(inject(function (_$controller_) {
             $controller = _$controller_;
         }));
@@ -54,6 +55,17 @@ describe('Home Page Tests', function () {
             expect(controller).not.toBeNull();
         });
 
+        it('should import author name from the service', function () {
+            expect($scope.projectAuthor).toBe('Purnesh Tripathi');
+        });
+
+        it('should import college name from the service', function () {
+            expect($scope.collegeName).toBe('College of Technology, GBPUAT, Pantnagar');
+        });
+
+        it('should import project name from the service', function () {
+            expect($scope.projectTitle).toBe('Online Counselling System');
+        });
     });
 
     describe('navigationBarHandler Controller CHILD OF universalHandler', function(){
@@ -79,6 +91,22 @@ describe('Home Page Tests', function () {
                href: "#",
                id: "home-tab-navbar"
            }]));
+        });
+
+        it('should contain the link to display page', function () {
+            expect($scope.navBarEntries).toEqual(jasmine.arrayContaining([{
+                name: "Display",
+                href: "#",
+                id: "display-navbar"
+            }]));
+        });
+
+        it('should contain the link to documents required page', function () {
+            expect($scope.navBarEntries).toEqual(jasmine.arrayContaining([{
+                name: "Documents Required",
+                href: "#",
+                id: "documents-required-navbar"
+            }]));
         });
 
         it('should contain the link to login or register', function () {
@@ -112,7 +140,7 @@ describe('Dashboard Page Tests', function () {
             expect(controller).not.toBeNull();
         });
 
-        it('should have at least one element in the sidebar', function (){
+        it('should have overview element in the sidebar', function (){
             expect($scope.sidebarEntries.contents).toEqual(jasmine.arrayContaining([
                 {
                     href: "#",

@@ -9,10 +9,12 @@ var ocs = angular.module('cotocs', []);
  SERVICE globalDetails BEGINS
  This function will be responsible for defining all global variables for the project
  */
-ocs.service('globalDetails', function () {
-    this.projectTitle = "Online Counselling System";
-    this.projectAuthor = "Purnesh Tripathi";
-    this.collegeName = "College of Technology, GBPUAT, Pantnagar";
+ocs.factory('globalDetails', function () {
+    var globalvar = {};
+    globalvar.projectTitle = "Online Counselling System";
+    globalvar.projectAuthor = "Purnesh Tripathi";
+    globalvar.collegeName = "College of Technology, GBPUAT, Pantnagar";
+    return globalvar;
 });
 /*
  ======================================
@@ -72,9 +74,9 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails) {
                 id: "documents-required-navbar"
             },
             {
-                name: "Rules",
+                name: "Display",
                 href: "#",
-                id: "rules-tab-navbar"
+                id: "display-navbar"
             },
             {
                 name: "Login/Register",
