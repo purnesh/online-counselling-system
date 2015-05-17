@@ -101,15 +101,65 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails) {
  * This function will handle tasks on a broader level, not delving in petty businesses
  * */
 ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
-    $scope.sidebarEntries = [
-        {type: 'untitled-list',
+    $scope.sidebarEntries = {
+
+        type: 'untitled-list',
         class: 'nav nav-sidebar',
         contents: [
             {
-
+                href: "#",
+                displayText: "Overview"
+            },
+            {
+                href: "#",
+                displayText: "Registered Students"
+            },
+            {
+                href: "#",
+                displayText: "Analytics"
+            },
+            {
+                href: "#",
+                displayText: "Export"
+            },
+            {
+                href: "#",
+                displayText: "Information Tech."
+            },
+            {
+                href: "#",
+                displayText: "Electrical"
+            },
+            {
+                href: "#",
+                displayText: "Elec. & Comm."
+            },
+            {
+                href: "#",
+                displayText: "Agriculture"
+            },
+            {
+                href: "#",
+                displayText: "Computer"
+            },
+            {
+                href: "#",
+                displayText: "Production"
+            },
+            {
+                href: "#",
+                displayText: "Mechanical"
+            },
+            {
+                href: "#",
+                displayText: "Bio-Tech"
             }
-        ]}
-    ];
+        ]
+    };
+    $scope.selectedEntry = 0;
+    $scope.selectEntry = function(row){
+        $scope.selectedEntry = row;
+    }
 });
 /*
  * CONTROLLER dashboardSidebarHandler ENDS

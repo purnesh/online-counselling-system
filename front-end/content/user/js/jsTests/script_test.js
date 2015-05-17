@@ -111,6 +111,15 @@ describe('Dashboard Page Tests', function () {
         it('should Exist', function () {
             expect(controller).not.toBeNull();
         });
+
+        it('should have at least one element in the sidebar', function (){
+            expect($scope.sidebarEntries.contents).toEqual(jasmine.arrayContaining([
+                {
+                    href: "#",
+                    displayText: "Overview"
+                }
+            ]));
+        });
     });
 });
 
