@@ -125,34 +125,6 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
             {
                 href: "#",
                 displayText: "Information Tech."
-            },
-            {
-                href: "#",
-                displayText: "Electrical"
-            },
-            {
-                href: "#",
-                displayText: "Elec. & Comm."
-            },
-            {
-                href: "#",
-                displayText: "Agriculture"
-            },
-            {
-                href: "#",
-                displayText: "Computer"
-            },
-            {
-                href: "#",
-                displayText: "Production"
-            },
-            {
-                href: "#",
-                displayText: "Mechanical"
-            },
-            {
-                href: "#",
-                displayText: "Bio-Tech"
             }
         ]
     };

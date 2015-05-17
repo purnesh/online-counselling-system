@@ -120,6 +120,15 @@ describe('Dashboard Page Tests', function () {
                 }
             ]));
         });
+
+        it('should have a link to display list of registered students', function () {
+            expect($scope.sidebarEntries.contents).toEqual(jasmine.arrayContaining([
+                {
+                    href: "#",
+                    displayText: "Registered Students"
+                }
+            ]));
+        });
     });
 });
 
