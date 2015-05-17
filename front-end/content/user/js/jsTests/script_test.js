@@ -3,6 +3,14 @@
  */
 describe('Home Page Tests', function () {
 
+//    Service testing is not yet complete. NEED TO LEARN HOW TO TEST SERVICES
+    describe('globalDetails Service', function () {
+        var $scope;
+        beforeEach(module('cotocs'));
+
+    });
+
+
     describe('headerDisplayHandler Controller', function(){
         var $scope;
         beforeEach(module('cotocs'));
@@ -29,7 +37,26 @@ describe('Home Page Tests', function () {
         });
     });
 
-    describe('navigationBarHandler Controller', function(){
+    describe('universalHandler Controller', function(){
+        var $scope;
+        beforeEach(module('cotocs'));
+
+        beforeEach(inject(function (_$controller_) {
+            $controller = _$controller_;
+        }));
+
+        beforeEach(inject(function($rootScope) {
+            $scope = $rootScope.$new();
+            controller = $controller('universalHandler', {$scope: $scope});
+        }));
+
+        it('should Exist', function () {
+            expect(controller).not.toBeNull();
+        });
+
+    });
+
+    describe('navigationBarHandler Controller CHILD OF universalHandler', function(){
         var $scope;
         beforeEach(module('cotocs'));
 
@@ -64,6 +91,27 @@ describe('Home Page Tests', function () {
 
     });
 
+});
+
+describe('Dashboard Page Tests', function () {
+
+    describe('dashboardSidebarHandler Controller', function(){
+        var $scope;
+        beforeEach(module('cotocs'));
+
+        beforeEach(inject(function (_$controller_) {
+            $controller = _$controller_;
+        }));
+
+        beforeEach(inject(function($rootScope) {
+            $scope = $rootScope.$new();
+            controller = $controller('dashboardSidebarHandler', {$scope: $scope});
+        }));
+
+        it('should Exist', function () {
+            expect(controller).not.toBeNull();
+        });
+    });
 });
 
 //Use xit or xdescribe to temporarily disable tests from running
