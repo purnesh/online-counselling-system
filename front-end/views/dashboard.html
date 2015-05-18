@@ -1,46 +1,3 @@
-<!DOCTYPE html>
-<html ng-app="cotocs">
-<head ng-controller="headerDisplayHandler">
-    <title ng-bind="displayData.title"></title>
-    <!-- Vendor Scripts Begin -->
-    <script src='./content/vendor/angular/angular.js'></script>
-    <script src='./content/vendor/jquery/jquery.js'></script>
-    <script src='./content/vendor/bootstrap/bootstrap.js'></script>
-    <!-- Vendor Scripts End -->
-
-    <!-- User Scripts Start -->
-    <script src='./content/user/js/script.js'></script>
-    <!-- User Scripts End -->
-
-    <!-- Vendor Stylesheets Start -->
-    <link rel="stylesheet" href="content/vendor/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="content/user/css/dashboard-style.css">
-    <link rel="stylesheet" href="content/user/css/footer-style.css">
-    <!-- Vendor Stylesheets End -->
-</head>
-<body ng-controller="universalHandler">
-
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" ng-controller="navigationBarHandler">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" ng-bind="projectTitle">OCS Error - Contact Admin</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li ng-repeat="navBarEntry in navBarEntries" ng-click="selectEntry($index)" ng-class="{active: $index==selectedEntry}"><a ng-href="{{navBarEntry.href}}" ng-bind="navBarEntry.name"></a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-<!-- Fixed NavBar Ends -->
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" ng-controller="dashboardSidebarHandler">
@@ -202,15 +159,3 @@
         </div>
     </div>
 </div>
-
-
-
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-    </div>
-</footer>
-
-
-</body>
-</html>
