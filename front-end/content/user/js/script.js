@@ -4,6 +4,18 @@
 
 var ocs = angular.module('cotocs', ['ui.router']);
 
+/*
+* CONFIGURATION enabling CORS Request using AngularJS BEGINS
+* */
+ocs.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+}
+]);
+/*
+ * CONFIGURATION enabling CORS Request using AngularJS ENDS
+ * */
+
 
 ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
@@ -15,7 +27,22 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: 'views/homePage.html'
 //            controller: controllerName
         });
+    $stateProvider
+        .state('dashboard',
+        {
+            url: '/dashboard',
+            templateUrl: 'views/dashboard.html'
+//            controller: controllerName
+        });
+    $stateProvider
+        .state('signin',
+        {
+            url: '/signin',
+            templateUrl: 'views/signin.html'
+//            controller: controllerName
+        });
 }]);
+
 
 /*
  ======================================
@@ -78,12 +105,12 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails) {
     $scope.navBarEntries = [
         {
                 name: "Home",
-                href: "#",
+                href: "#home",
                 id: "home-tab-navbar"
             },
             {
                 name: "Documents Required",
-                href: "#",
+                href: "#dashboard",
                 id: "documents-required-navbar"
             },
             {
@@ -93,7 +120,7 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails) {
             },
             {
                 name: "Login/Register",
-                href: "#",
+                href: "#signin",
                 id: "login-register-navbar"
             }
     ];
