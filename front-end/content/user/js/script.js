@@ -82,10 +82,16 @@ ocs.controller('headerDisplayHandler', function($scope, globalDetails){
 * CONTROLLER universalHandler BEGINS
 * This function will handle tasks on a broader level, not delving in petty businesses
 * */
-ocs.controller('universalHandler', function($scope, globalDetails){
+ocs.controller('universalHandler', function($scope, $http, globalDetails){
     $scope.projectTitle = globalDetails.projectTitle;
     $scope.projectAuthor = globalDetails.projectAuthor;
-    $scope.collegeName = globalDetails.collegeName;
+/*
+Cross server HTTP Request test
+    $http.get('http://localhost/project/back-end/index.php/api').
+        success(function(data, status, headers, config) {
+            $scope.collegeName = data;
+        });
+ */
 });
 /*
  * CONTROLLER universalHandler ENDS

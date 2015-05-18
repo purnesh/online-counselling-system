@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a99edc3-513d-4bd9-948a-00bbd9aab859" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/dashboard.html" afterPath="$PROJECT_DIR$/../front-end/views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/error.html" afterPath="$PROJECT_DIR$/../front-end/views/error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/homePage.html" afterPath="$PROJECT_DIR$/../front-end/views/homePage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/../front-end/content/user/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/signin.html" afterPath="$PROJECT_DIR$/../front-end/views/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final-back.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultPage.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DefaultPage.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.264" vertical-offset="0" max-vertical-offset="625">
+            <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -52,19 +46,19 @@
       <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="37" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
+            <state line="7" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Api_data.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Api_data.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="20" column="21" selection-start="397" selection-end="397" vertical-scroll-proportion="0.48" vertical-offset="0" max-vertical-offset="625">
               <folding>
                 <element signature="e#6#88#0" expanded="true" />
-                <marker date="1431889695827" expanded="true" signature="268:286" placeholder="select * fro..test..." />
+                <marker date="1431944801755" expanded="true" signature="268:286" placeholder="select * fro..test..." />
               </folding>
             </state>
           </provider>
@@ -328,7 +322,7 @@
         <state line="8" column="6" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="420">
           <folding>
             <element signature="e#6#88#0" expanded="true" />
-            <marker date="1431889695827" expanded="true" signature="268:286" placeholder="select * fro..test..." />
+            <marker date="1431944801755" expanded="true" signature="268:286" placeholder="select * fro..test..." />
           </folding>
         </state>
       </provider>
@@ -415,27 +409,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="37" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
+        <state line="7" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="20" column="21" selection-start="397" selection-end="397" vertical-scroll-proportion="0.48" vertical-offset="0" max-vertical-offset="625">
           <folding>
             <element signature="e#6#88#0" expanded="true" />
-            <marker date="1431889695827" expanded="true" signature="268:286" placeholder="select * fro..test..." />
+            <marker date="1431944801755" expanded="true" signature="268:286" placeholder="select * fro..test..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.264" vertical-offset="0" max-vertical-offset="625">
-          <folding />
         </state>
       </provider>
     </entry>
