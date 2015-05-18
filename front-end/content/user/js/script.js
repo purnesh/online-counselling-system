@@ -2,7 +2,20 @@
  * Created by hokage on 14/5/15.
  */
 
-var ocs = angular.module('cotocs', []);
+var ocs = angular.module('cotocs', ['ui.router']);
+
+
+ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+        .state('main',
+        {
+            url: '/',
+            templateUrl: 'views/homePage.html'
+//            controller: controllerName
+        });
+}]);
 
 /*
  ======================================

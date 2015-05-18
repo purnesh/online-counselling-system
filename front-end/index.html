@@ -4,6 +4,7 @@
     <title ng-bind="displayData.title"></title>
     <!-- Vendor Scripts Begin -->
     <script src='./content/vendor/angular/angular.js'></script>
+    <script src='./content/vendor/angular/angular-ui-router.js'></script>
     <script src='./content/vendor/jquery/jquery.js'></script>
     <script src='./content/vendor/bootstrap/bootstrap.js'></script>
     <!-- Vendor Scripts End -->
@@ -43,13 +44,8 @@
 <!-- Fixed NavBar Ends -->
 
 <!-- BEGIN page content -->
-<div class="container">
-    <div class="page-header">
-        <h2>Welcome to <span ng-bind="projectTitle"></span></h2>
-    </div>
-    <p class="lead">This is the counselling platform for students appeared in JEE - 2015 for admission in
-    <span ng-bind="collegeName"></span>. </p>
-</div>
+<div ui-view></div>
+
 <!-- END Page Content -->
 
 <!-- FOOTER begins -->
