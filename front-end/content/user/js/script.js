@@ -186,3 +186,11 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
  * This function will handle tasks on a broader level, not delving in petty businesses
  * =====================================
  * */
+
+
+ocs.controller('signinHandler', function ($scope, globalDetails, $http) {
+    $scope.testData = 'Purnesh';
+    $scope.signin = function (userDetails) {
+
+    };
+});

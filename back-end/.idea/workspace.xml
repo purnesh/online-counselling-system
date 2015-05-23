@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a99edc3-513d-4bd9-948a-00bbd9aab859" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Authenticate.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../front-end/signin.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/../front-end/content/user/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/signin.html" afterPath="$PROJECT_DIR$/../front-end/views/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final-back.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,41 +32,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultPage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
+            <state line="1" column="0" selection-start="6" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Api_data.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
+      <file leaf-file-name="Authenticate.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="397" selection-end="397" vertical-scroll-proportion="0.48" vertical-offset="0" max-vertical-offset="625">
-              <folding>
-                <element signature="e#6#88#0" expanded="true" />
-                <marker date="1431944801755" expanded="true" signature="268:286" placeholder="select * fro..test..." />
-              </folding>
+            <state line="14" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.216" vertical-offset="0" max-vertical-offset="625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="307" column="69" selection-start="10543" selection-end="10543" vertical-scroll-proportion="0.0" vertical-offset="4415" max-vertical-offset="7605">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="65" selection-start="1849" selection-end="1849" vertical-scroll-proportion="-38.75" vertical-offset="0" max-vertical-offset="2190">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,11 +85,12 @@
         <option value="$PROJECT_DIR$/application/controllers/defaultPage.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/models/api_data.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Api.php" />
         <option value="$PROJECT_DIR$/application/models/Api_data.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Api.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Authenticate.php" />
       </list>
     </option>
   </component>
@@ -103,7 +108,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -122,7 +127,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,8 +195,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="final-back" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back-end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,18 +319,59 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465">
+        <state line="1" column="0" selection-start="6" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900">
+        <state line="14" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="375">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="307" column="69" selection-start="10543" selection-end="10543" vertical-scroll-proportion="0.0" vertical-offset="4415" max-vertical-offset="7605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="65" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="515" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
@@ -319,26 +383,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="420">
-          <folding>
-            <element signature="e#6#88#0" expanded="true" />
-            <marker date="1431944801755" expanded="true" signature="268:286" placeholder="select * fro..test..." />
-          </folding>
-        </state>
+        <state line="8" column="6" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900">
-          <folding />
-        </state>
+        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
@@ -355,9 +410,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/defaultPage.php">
@@ -367,9 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index.html">
@@ -392,44 +443,46 @@
         <state line="69" column="25" selection-start="3477" selection-end="3477" vertical-scroll-proportion="0.6" vertical-offset="660" max-vertical-offset="1695" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="501" column="0" selection-start="17492" selection-end="17492" vertical-scroll-proportion="1.24" vertical-offset="6740" max-vertical-offset="7605" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="30" selection-start="2948" selection-end="2948" vertical-scroll-proportion="0.136" vertical-offset="1505" max-vertical-offset="2190" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900">
-          <folding />
-        </state>
+        <state line="49" column="26" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/DefaultPage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="11" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="397" selection-end="397" vertical-scroll-proportion="0.48" vertical-offset="0" max-vertical-offset="625">
-          <folding>
-            <element signature="e#6#88#0" expanded="true" />
-            <marker date="1431944801755" expanded="true" signature="268:286" placeholder="select * fro..test..." />
-          </folding>
+        <state line="6" column="3" selection-start="88" selection-end="88" vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="307" column="69" selection-start="10543" selection-end="10543" vertical-scroll-proportion="0.0" vertical-offset="4415" max-vertical-offset="7605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="65" selection-start="1849" selection-end="1849" vertical-scroll-proportion="-38.75" vertical-offset="0" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.216" vertical-offset="0" max-vertical-offset="625">
+          <folding />
         </state>
       </provider>
     </entry>
