@@ -30,7 +30,7 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     $stateProvider
         .state('dashboard',
         {
-            url: '/dashboard',
+            url: '/display',
             templateUrl: 'views/dashboard.html'
 //            controller: controllerName
         });
@@ -115,14 +115,9 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails) {
                 id: "home-tab-navbar"
             },
             {
-                name: "Documents Required",
-                href: "#dashboard",
-                id: "documents-required-navbar"
-            },
-            {
                 name: "Display",
-                href: "#",
-                id: "display-navbar"
+                href: "#display",
+                id: "documents-required-navbar"
             },
             {
                 name: "Login/Register",
@@ -150,29 +145,36 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails) {
  * */
 ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
     $scope.sidebarEntries = {
-
         type: 'untitled-list',
         class: 'nav nav-sidebar',
         contents: [
             {
                 href: "#",
-                displayText: "Overview"
+                displayText: "Mechanical Engineering"
             },
             {
                 href: "#",
-                displayText: "Registered Students"
+                displayText: "Electrical Engineering"
             },
             {
                 href: "#",
-                displayText: "Analytics"
+                displayText: "Elec. & Comm. Engineering"
             },
             {
                 href: "#",
-                displayText: "Export"
+                displayText: "Agricultural Engineering"
             },
             {
                 href: "#",
-                displayText: "Information Tech."
+                displayText: "Information Technology"
+            },
+            {
+                href: "#",
+                displayText: "Production Engineering"
+            },
+            {
+                href: "#",
+                displayText: "B. Tech, Biotechnology"
             }
         ]
     };
