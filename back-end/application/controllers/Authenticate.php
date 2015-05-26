@@ -19,7 +19,7 @@ class Authenticate extends CI_Controller {
 
     public function user($type, $username, $password){
         $this->load->library('JWT');
-        $password = $this->jwt->encode('asd', 'Purnesh');
+        $password = $this->jwt->encode($password, 'Purnesh');
         echo $password;
     }
 }

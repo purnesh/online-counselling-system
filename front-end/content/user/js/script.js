@@ -5,8 +5,9 @@
 var ocs = angular.module('cotocs', ['ui.router']);
 
 /*
-* CONFIGURATION enabling CORS Request using AngularJS BEGINS
-* */
+ * ====================================
+ * CONFIGURATION enabling CORS Request using AngularJS BEGINS
+ * */
 ocs.config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
@@ -14,9 +15,13 @@ ocs.config(['$httpProvider', function($httpProvider) {
 ]);
 /*
  * CONFIGURATION enabling CORS Request using AngularJS ENDS
+ * ====================================
  * */
 
-
+/*
+ * ====================================
+ * CONFIGURATION of states and location using AngularJS BEGINS
+ * */
 ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 
@@ -42,7 +47,10 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 //            controller: controllerName
         });
 }]);
-
+/*
+ * CONFIGURATION of states and location using AngularJS BEGINS
+ * ====================================
+ * */
 
 /*
  ======================================
@@ -87,10 +95,7 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
     $scope.projectAuthor = globalDetails.projectAuthor;
 /*
 Cross server HTTP Request test
-    $http.get('http://localhost/project/back-end/index.php/api').
-        success(function(data, status, headers, config) {
-            $scope.collegeName = data;
-        });
+
  */
 });
 /*
@@ -190,9 +195,12 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
  * */
 
 
-ocs.controller('signinHandler', function ($scope, globalDetails, $http) {
-    $scope.testData = 'Purnesh';
-    $scope.signin = function (userDetails) {
-
-    };
+ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location) {
+    $scope.status = $location.protocol();
+    $scope.signin = function (username, password) {
+        $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/student/'+username+'/'+password;
+        $http.get($scope.corsUrl).success(function (data, headers, status, config) {
+            $scope.status = data;
+        });
+    }
 });
