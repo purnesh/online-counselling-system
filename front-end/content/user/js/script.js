@@ -71,21 +71,6 @@ ocs.factory('globalDetails', function () {
  */
 
 /*
- ======================================
- CONTROLLER headerDisplayHandler BEGINS
- This function will be responsible for defining all the background variables for header
- */
-ocs.controller('headerDisplayHandler', function($scope, globalDetails){
-    $scope.displayData = {title: globalDetails.projectTitle,
-                            author: globalDetails.projectAuthor};
-});
-/*
- CONTROLLER headerDisplayHandler ENDS
- This function will be responsible for defining all the background variables for header
- ======================================
- */
-
-/*
 * =====================================
 * CONTROLLER universalHandler BEGINS
 * This function will handle tasks on a broader level, not delving in petty businesses
@@ -93,10 +78,6 @@ ocs.controller('headerDisplayHandler', function($scope, globalDetails){
 ocs.controller('universalHandler', function($scope, $http, globalDetails){
     $scope.projectTitle = globalDetails.projectTitle;
     $scope.projectAuthor = globalDetails.projectAuthor;
-/*
-Cross server HTTP Request test
-
- */
 });
 /*
  * CONTROLLER universalHandler ENDS
@@ -110,8 +91,7 @@ Cross server HTTP Request test
  * This function will be responsible for defining all functions of the Navigation Bar
  * PARENT:: universalHandler
  */
-ocs.controller('navigationBarHandler', function($scope, $http, globalDetails, $location, $state) {
-    $scope.projectTitle = globalDetails.projectTitle;
+ocs.controller('navigationBarHandler', function($scope, globalDetails, $state) {
 
     $scope.navBarEntries = [
         {
@@ -135,13 +115,7 @@ ocs.controller('navigationBarHandler', function($scope, $http, globalDetails, $l
     ];
 
     $scope.selectedEntry = 0;
-    var needle = $state.current.name;
-    console.log(needle);
-    for (var i = 0; i < $scope.navBarEntries.length; i++){
-        if ($scope.navBarEntries.state == needle){
-            $scope.selectedEntry = i;
-        }
-    }
+
     $scope.selectEntry = function(row){
         $scope.selectedEntry = row;
     }
