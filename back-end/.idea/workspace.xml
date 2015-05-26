@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6a99edc3-513d-4bd9-948a-00bbd9aab859" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Authenticate.php" afterPath="$PROJECT_DIR$/application/controllers/Authenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/../front-end/content/user/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/signin.html" afterPath="$PROJECT_DIR$/../front-end/views/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,7 +39,16 @@
       <file leaf-file-name="Authenticate.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="550" selection-end="550" vertical-scroll-proportion="0.384" vertical-offset="0" max-vertical-offset="625">
+            <state line="20" column="36" selection-start="515" selection-end="515" vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JWT.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/libraries/JWT.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2610">
               <folding />
             </state>
           </provider>
@@ -69,6 +76,7 @@
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/Api.php" />
+        <option value="$PROJECT_DIR$/application/libraries/UserHandler.php" />
         <option value="$PROJECT_DIR$/application/controllers/Authenticate.php" />
       </list>
     </option>
@@ -223,6 +231,11 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/libraries" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -574,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/JWT.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.648" vertical-offset="405" max-vertical-offset="2610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="5" selection-start="358" selection-end="358" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="375">
@@ -588,9 +594,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/JWT.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="550" selection-end="550" vertical-scroll-proportion="0.384" vertical-offset="0" max-vertical-offset="625">
+        <state line="20" column="36" selection-start="515" selection-end="515" vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="625">
           <folding />
         </state>
       </provider>
