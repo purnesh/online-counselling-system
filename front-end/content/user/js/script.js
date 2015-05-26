@@ -110,27 +110,38 @@ Cross server HTTP Request test
  * This function will be responsible for defining all functions of the Navigation Bar
  * PARENT:: universalHandler
  */
-ocs.controller('navigationBarHandler', function($scope, globalDetails) {
+ocs.controller('navigationBarHandler', function($scope, $http, globalDetails, $location, $state) {
     $scope.projectTitle = globalDetails.projectTitle;
 
     $scope.navBarEntries = [
         {
-                name: "Home",
-                href: "#home",
-                id: "home-tab-navbar"
-            },
-            {
-                name: "Display",
-                href: "#display",
-                id: "documents-required-navbar"
-            },
-            {
-                name: "Login/Register",
-                href: "#signin",
-                id: "login-register-navbar"
-            }
+            state: "home",
+            name: "Home",
+            href: "#home",
+            id: "home-tab-navbar"
+        },
+        {
+            state: "display",
+            name: "Display",
+            href: "#display",
+            id: "documents-required-navbar"
+        },
+        {
+            state: "signin",
+            name: "Login/Register",
+            href: "#signin",
+            id: "login-register-navbar"
+        }
     ];
+
     $scope.selectedEntry = 0;
+    var needle = $state.current.name;
+    console.log(needle);
+    for (var i = 0; i < $scope.navBarEntries.length; i++){
+        if ($scope.navBarEntries.state == needle){
+            $scope.selectedEntry = i;
+        }
+    }
     $scope.selectEntry = function(row){
         $scope.selectedEntry = row;
     }
@@ -195,12 +206,13 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
  * */
 
 
-ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location) {
-    $scope.status = $location.protocol();
+ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location, $state) {
+    $scope.status = $state.current.name;
     $scope.signin = function (username, password) {
         $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/student/'+username+'/'+password;
         $http.get($scope.corsUrl).success(function (data, headers, status, config) {
             $scope.status = data;
+            //$state.go('dashboard');
         });
     }
 });
