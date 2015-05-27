@@ -17,11 +17,13 @@ class Authenticate extends CI_Controller {
         parent::__construct();
     }
 
-    public function user($type, $username, $password){
+    public function user($username, $password){
         $this->load->library('JWT');
+        $this->load->model('Authenticationmodel');
+        echo $this->Authenticationmodel->authenticate_user($username, $password);
         $password = $this->jwt->jsonEncode($password);
         $password = $this->jwt->encode($password, 'Purnesh');
-        echo $password;
+
     }
 }
 

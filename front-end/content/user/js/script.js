@@ -183,7 +183,7 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
 ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location, $state) {
     $scope.status = $state.current.name;
     $scope.signin = function (username, password) {
-        $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/student/'+username+'/'+password;
+        $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/'+username+'/'+password;
         $http.get($scope.corsUrl).success(function (data, headers, status, config) {
             $scope.status = data;
             //$state.go('dashboard');
