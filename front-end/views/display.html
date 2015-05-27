@@ -2,18 +2,18 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" ng-controller="dashboardSidebarHandler">
             <ul class="nav nav-sidebar">
-                <li ng-repeat="item in sidebarEntries.contents" ng-click="selectEntry($index)" ng-class="{active: $index==selectedEntry}">
-                    <a ui-sref="{{item.href}}">{{item.displayText}}</a>
+                <li ng-repeat="item in sidebarEntries.contents" ui-sref-active="active">
+                    <a ui-sref="{{item.href}}" ui-sref-opts="{reload: true}">{{item.displayText}}</a>
                 </li>
             </ul>
 
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header" style="text-align: center">B. Tech Biotechnology</h1>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="branchController">
+            <h1 class="page-header" style="text-align: center" ng-bind="branchName"></h1>
 
             <div class="row placeholders" style="margin-top: -20px">
                 <div class="placeholder">
-                    <h4>G. B. Pant Engineering College, Pauri, Garhwal</h4>
+                    <h4>College of Technology, GBPUAT, Pantnagae</h4>
 
                 </div>
                 <!--

@@ -32,6 +32,7 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: 'views/homePage.html'
 //            controller: controllerName
         });
+
     $stateProvider
         .state('display',
         {
@@ -44,16 +45,102 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('display.me',
         {
             url: '/display.me',
-            templateUrl: 'views/display.html'
-//            controller: controllerName
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'me'
+            }
         });
 
+    $stateProvider
+        .state('display.ae',
+        {
+            url: '/display.ae',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'ae'
+            }
+        });
+    $stateProvider
+        .state('display.ce',
+        {
+            url: '/display.ce',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'ce'
+            }
+        });
 
     $stateProvider
-        .state('signin',
+        .state('display.cse',
         {
-            url: '/signin',
-            templateUrl: 'views/signin.html'
+            url: '/display.cse',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'cse'
+            }
+        });
+    $stateProvider
+        .state('display.ee',
+        {
+            url: '/display.ee',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'ee'
+            }
+        });
+
+    $stateProvider
+        .state('display.ece',
+        {
+            url: '/display.ece',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'ece'
+            }
+        });
+
+    $stateProvider
+        .state('display.it',
+        {
+            url: '/display.it',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'it'
+            }
+        });
+    $stateProvider
+        .state('display.iped',
+        {
+            url: '/display.iped',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'iped'
+            }
+        });
+    $stateProvider
+        .state('display.bio',
+        {
+            url: '/display.bio',
+            templateUrl: 'views/display.html',
+            controller: 'branchDisplay',
+            data: {
+                branchCode: 'bio'
+            }
+        });
+
+    $stateProvider
+        .state('register',
+        {
+            url: '/register',
+            templateUrl: 'views/register.html'
 //            controller: controllerName
         });
 }]);
@@ -72,6 +159,7 @@ ocs.factory('globalDetails', function () {
     globalvar.projectTitle = "Online Counselling System";
     globalvar.projectAuthor = "Purnesh Tripathi";
     globalvar.collegeName = "College of Technology, GBPUAT, Pantnagar";
+    globalvar.isAuth = 0;
     return globalvar;
 });
 /*
@@ -95,6 +183,56 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
  * =====================================
  * */
 
+ocs.controller('branchController', function($scope, $state, $http, globalDetails){
+    if($state.current.data !== undefined){
+        switch($state.current.data.branchCode) {
+            case 'ae':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Agricultural Engineering";
+                break;
+
+            case 'me':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Mechanical Engineering";
+                break;
+            case 'ce':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Civil Engineering";
+                break;
+            case 'cse':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Computer Engineering";
+                break;
+            case 'ee':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Electrical Engineering";
+                break;
+            case 'ece':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Electronics and Communication Engineering";
+                break;
+            case 'iped':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Industrial & Production Engineering";
+                break;
+            case 'it':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "Information Technology";
+                break;
+            case 'bio':
+                $scope.branchCode = $state.current.data.branchCode;
+                $scope.branchName = "B. Tech Biotechnology";
+                break;
+        }
+    }
+    else{
+        $scope.branchCode = 'me';
+        $scope.branchName = "Mechanical Engineering";
+        $state.go('display.me');
+    }
+    $scope.projectAuthor = globalDetails.projectAuthor;
+});
+
 /*
  * =====================================
  * CONTROLLER navigationBarHandler BEGINS
@@ -117,9 +255,9 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails, $state) {
             id: "documents-required-navbar"
         },
         {
-            state: "signin",
-            name: "Login/Register",
-            href: "#signin",
+            state: "register",
+            name: "Register",
+            href: "#register",
             id: "login-register-navbar"
         }
     ];
@@ -149,31 +287,39 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
         class: 'nav nav-sidebar',
         contents: [
             {
+                href: "display.ae",
+                displayText: "Agricultural Engineering"
+            },
+            {
+                href: "display.ce",
+                displayText: "Civil Engineering"
+            },
+            {
+                href: "display.cse",
+                displayText: "Computer Engineering"
+            },
+            {
+                href: "display.ee",
+                displayText: "Electrical Engineering"
+            },
+            {
+                href: "display.ece",
+                displayText: "Elec. & Comm. Engineering"
+            },
+            {
+                href: "display.it",
+                displayText: "Information Technology"
+            },
+            {
                 href: "display.me",
                 displayText: "Mechanical Engineering"
             },
             {
-                href: "#",
-                displayText: "Electrical Engineering"
-            },
-            {
-                href: "#",
-                displayText: "Elec. & Comm. Engineering"
-            },
-            {
-                href: "#",
-                displayText: "Agricultural Engineering"
-            },
-            {
-                href: "#",
-                displayText: "Information Technology"
-            },
-            {
-                href: "#",
+                href: "display.iped",
                 displayText: "Production Engineering"
             },
             {
-                href: "#",
+                href: "display.bio",
                 displayText: "B. Tech, Biotechnology"
             }
         ]
@@ -191,12 +337,18 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
 
 
 ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location, $state) {
-    $scope.status = $state.current.name;
-    $scope.signin = function (username, password) {
-        $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/'+username+'/'+password;
-        $http.get($scope.corsUrl).success(function (data, headers, status, config) {
-            $scope.status = data;
-            //$state.go('dashboard');
-        });
+    if(globalDetails.isAuth == 1){
+        $state.go('display');
+    }else{
+        $scope.status = $state.current.name;
+        $scope.signin = function (username, password) {
+            $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/'+username+'/'+password;
+            $http.get($scope.corsUrl).success(function (data, headers, status, config) {
+                $scope.status = data;
+                globalDetails.isAuth = 1;
+                //$state.go('dashboard');
+            });
+        }
     }
+
 });
