@@ -226,9 +226,9 @@ ocs.controller('branchController', function($scope, $state, $http, globalDetails
         }
     }
     else{
-        $scope.branchCode = 'me';
-        $scope.branchName = "Mechanical Engineering";
-        $state.go('display.me');
+        $scope.branchCode = 'it';
+        $scope.branchName = "Information Technology";
+        $state.go('display.it');
     }
     $scope.projectAuthor = globalDetails.projectAuthor;
 });
