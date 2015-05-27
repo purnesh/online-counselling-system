@@ -33,12 +33,22 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 //            controller: controllerName
         });
     $stateProvider
-        .state('dashboard',
+        .state('display',
         {
             url: '/display',
-            templateUrl: 'views/dashboard.html'
+            templateUrl: 'views/display.html'
 //            controller: controllerName
         });
+
+    $stateProvider
+        .state('display.me',
+        {
+            url: '/display.me',
+            templateUrl: 'views/display.html'
+//            controller: controllerName
+        });
+
+
     $stateProvider
         .state('signin',
         {
@@ -139,7 +149,7 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
         class: 'nav nav-sidebar',
         contents: [
             {
-                href: "#",
+                href: "display.me",
                 displayText: "Mechanical Engineering"
             },
             {
