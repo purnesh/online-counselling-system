@@ -168,6 +168,18 @@ ocs.factory('globalDetails', function () {
  This function will be responsible for defining all global variables for the project
  */
 
+ocs.factory('branchDetails', function($http) {
+    var branchApiUrl = "http://localhost/project/back-end/index.php/api";
+    return function(branchCode){
+        $http.get(branchApiUrl).success(function (data, headers, status, config) {
+            console.log(branchCode);
+            console.log(data);
+            //$state.go('dashboard');
+        });
+    };
+});
+
+
 /*
 * =====================================
 * CONTROLLER universalHandler BEGINS
@@ -183,44 +195,53 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
  * =====================================
  * */
 
-ocs.controller('branchController', function($scope, $state, $http, globalDetails){
+ocs.controller('branchController', function($scope, $state, $http, globalDetails, branchDetails){
     if($state.current.data !== undefined){
         switch($state.current.data.branchCode) {
             case 'ae':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Agricultural Engineering";
                 break;
 
             case 'me':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Mechanical Engineering";
                 break;
             case 'ce':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Civil Engineering";
                 break;
             case 'cse':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Computer Engineering";
                 break;
             case 'ee':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Electrical Engineering";
                 break;
             case 'ece':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Electronics and Communication Engineering";
                 break;
             case 'iped':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Industrial & Production Engineering";
                 break;
             case 'it':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "Information Technology";
                 break;
             case 'bio':
                 $scope.branchCode = $state.current.data.branchCode;
+                branchDetails($scope.branchCode);
                 $scope.branchName = "B. Tech Biotechnology";
                 break;
         }
