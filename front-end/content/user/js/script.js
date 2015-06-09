@@ -168,14 +168,11 @@ ocs.factory('globalDetails', function () {
  This function will be responsible for defining all global variables for the project
  */
 
-ocs.factory('branchDetails', function($http) {
-    var branchApiUrl = "http://localhost/project/back-end/index.php/api";
+ocs.factory('branchDetails', function($http, globalDetails) {
+
     return function(branchCode){
-        $http.get(branchApiUrl).success(function (data, headers, status, config) {
-            console.log(branchCode);
-            console.log(data);
-            //$state.go('dashboard');
-        });
+        var branchApiUrl = "http://localhost/project/back-end/index.php/api/branch_info/" + branchCode;
+
     };
 });
 
@@ -196,12 +193,20 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
  * */
 
 ocs.controller('branchController', function($scope, $state, $http, globalDetails, branchDetails){
+
     if($state.current.data !== undefined){
         switch($state.current.data.branchCode) {
             case 'ae':
                 $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
+                var branchApiUrl = "http://localhost/project/back-end/index.php/api/branch_info/" + $scope.branchCode;
                 $scope.branchName = "Agricultural Engineering";
+                var a = $http.get(branchApiUrl).success(function (data, headers, status, config) {
+                    //console.log(data);
+                    return data;
+                    //$state.go('dashboard');
+                });
+                console.log(a);
+                console.log(globalDetails.isAuth);
                 break;
 
             case 'me':
