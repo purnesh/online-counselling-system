@@ -192,6 +192,7 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
  * =====================================
  * */
 
+
 ocs.controller('branchController', function($scope, $state, $http, globalDetails, branchDetails){
 
     if($state.current.data !== undefined){
