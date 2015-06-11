@@ -2,7 +2,7 @@
  * Created by hokage on 14/5/15.
  */
 
-var ocs = angular.module('cotocs', ['ui.router']);
+var ocs = angular.module('cotocs', ['ui.router', 'ngResource']);
 
 /*
  * ====================================
@@ -17,6 +17,20 @@ ocs.config(['$httpProvider', function($httpProvider) {
  * CONFIGURATION enabling CORS Request using AngularJS ENDS
  * ====================================
  * */
+
+/*
+ * ====================================
+ * CONFIGURATION enabling CORS Request using AngularJS BEGINS
+ * */
+ocs.config(['$resourceProvider', function($resourceProvider) {
+    $resourceProvider.defaults.stripTrailingSlashes = false;
+}]);
+/*
+ * CONFIGURATION enabling CORS Request using AngularJS ENDS
+ * ====================================
+ * */
+
+
 
 /*
  * ====================================
@@ -193,61 +207,40 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
  * */
 
 
-ocs.controller('branchController', function($scope, $state, $http, globalDetails, branchDetails){
+ocs.controller('branchController', function($scope, $state, $http, $resource, globalDetails, branchDetails){
 
     if($state.current.data !== undefined){
+        $scope.branchCode = $state.current.data.branchCode;
+        var branchApiUrl = "http://localhost/project/back-end/index.php/api/branch_info/" + $scope.branchCode;
+        var b = $resource(branchApiUrl);
+        $scope.branchVacancyData = b.get();
         switch($state.current.data.branchCode) {
             case 'ae':
-                $scope.branchCode = $state.current.data.branchCode;
-                var branchApiUrl = "http://localhost/project/back-end/index.php/api/branch_info/" + $scope.branchCode;
                 $scope.branchName = "Agricultural Engineering";
-                var a = $http.get(branchApiUrl).success(function (data, headers, status, config) {
-                    //console.log(data);
-                    return data;
-                    //$state.go('dashboard');
-                });
-                console.log(a);
-                console.log(globalDetails.isAuth);
                 break;
 
             case 'me':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Mechanical Engineering";
                 break;
             case 'ce':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Civil Engineering";
                 break;
             case 'cse':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Computer Engineering";
                 break;
             case 'ee':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Electrical Engineering";
                 break;
             case 'ece':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Electronics and Communication Engineering";
                 break;
             case 'iped':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Industrial & Production Engineering";
                 break;
             case 'it':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "Information Technology";
                 break;
             case 'bio':
-                $scope.branchCode = $state.current.data.branchCode;
-                branchDetails($scope.branchCode);
                 $scope.branchName = "B. Tech Biotechnology";
                 break;
         }
@@ -378,4 +371,11 @@ ocs.controller('signinHandler', function ($scope, globalDetails, $http, $locatio
         }
     }
 
+});
+
+ocs.filter('debug', function() {
+    return function(input) {
+        if (input === '') return 'empty string';
+        return input ? input : ('' + input);
+    };
 });
