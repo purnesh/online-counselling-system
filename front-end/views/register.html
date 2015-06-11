@@ -1,0 +1,15 @@
+<div class="container" ng-controller="dashboardHandler">
+<br />
+
+    <form name="studentRegistrationForm" class="form-register">
+        <h1>Student Registration Form</h1>
+        <br />
+        <input class="col-md-12 form-control" style="padding: 5px;" type="text" name="fullname" id="fullname" placeholder="Full Name" ng-model="fullname" required/>
+        <input class="col-md-12 form-control" style="padding: 5px; margin-top:8px;" type="text" name="fathername" id="fathername" placeholder="Father's Name" ng-model="fathername" required/>
+        <input class="col-md-12 form-control" style="padding: 5px; margin-top:8px;" type="text" name="address" id="address" placeholder="Address" ng-model="address" required/>
+        <input class="col-md-12 form-control" style="padding: 5px; margin-top:8px;" type="text" name="rank" id="rank" placeholder="JEE Rank" ng-model="rank" required/>
+        <input class="col-md-12 form-control" style="padding: 5px; margin-top:8px;" type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number" ng-model="phonenumber" required/>
+        <button ng-click="registerStudent()" class="btn-danger form-control col-md-12" style="padding: 5px; margin-top:8px;   " ng-disabled="studentRegistrationForm.$invalid">Submit</button>
+    </form>
+    {{as}}
+</div>

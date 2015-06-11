@@ -155,6 +155,35 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: 'views/login.html'
 //            controller: controllerName
         });
+    $stateProvider
+        .state('dashboard',
+        {
+            url: '/dashboard',
+            templateUrl: 'views/dashboard.html',
+            controller: 'dashboardHandler'
+        });
+    $stateProvider
+        .state('register',
+        {
+            url: '/register',
+            templateUrl: 'views/register.html',
+            controller: 'dashboardHandler'
+        });
+    $stateProvider
+        .state('modifyDetails',
+        {
+            url: '/modify',
+            templateUrl: 'views/modify.html',
+            controller: 'dashboardHandler'
+        });
+    $stateProvider
+        .state('available',
+        {
+            url: '/available',
+            templateUrl: 'views/available.html',
+            controller: 'dashboardHandler'
+        });
+
 }]);
 /*
 * CONFIGURATION of states and location using AngularJS BEGINS
@@ -277,6 +306,12 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails, $state) {
             name: "Login",
             href: "#login",
             id: "login-navbar"
+        },
+        {
+            state: "dashboard",
+            name: "Dashboard",
+            href: "#dashboard",
+            id: "dashboard-navbar"
         }
     ];
 
@@ -358,12 +393,13 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
 * This function will handle signin related requests
 * */
 ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location, $state) {
-    if(globalDetails.isAuth == 1){
+    if($scope.isAuth == 1){
         $state.go('display');
     }else{
         $scope.status = $state.current.name;
         $scope.signin = function (username, password) {
             $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/'+username+'/'+password;
+
         }
     }
 });
@@ -372,6 +408,28 @@ ocs.controller('signinHandler', function ($scope, globalDetails, $http, $locatio
 * This function will handle signin related requests
 * =====================================
 * */
+
+/*
+ * =====================================
+ * CONTROLLER dashboardHandler BEGINS
+ * This function will handle dashboard related requests
+ * */
+ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $location, $state) {
+    $scope.registerStudent = function () {
+        $scope.as = $scope.fullname;
+    };
+});
+/*
+ * CONTROLLER dashboardHandler BEGINS
+ * This function will handle dashboard related requests
+ * =====================================
+ * */
+
+ocs.controller('registrationHandler', function ($scope, globalDetails, $http, $location, $state, $resource) {
+
+});
+
+
 
 ocs.filter('debug', function() {
     return function(input) {
