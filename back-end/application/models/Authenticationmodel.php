@@ -15,8 +15,10 @@ class Authenticationmodel extends CI_Model {
     }
 
     public function authenticate_user($username, $password){
-        $data = $username.$password;
-        return $data;
+        $authString = "select * from authentication_data WHERE username='$username' AND password='$password'";
+        $query = $this->db->query($authString);
+        $isAuthentic = $query->num_rows();
+        return $isAuthentic;
     }
 
 }

@@ -20,9 +20,12 @@ class Authenticate extends CI_Controller {
     public function user($username, $password){
         $this->load->library('JWT');
         $this->load->model('Authenticationmodel');
-        echo $this->Authenticationmodel->authenticate_user($username, $password);
-        $password = $this->jwt->jsonEncode($password);
-        $password = $this->jwt->encode($password, 'Purnesh');
+        if($this->Authenticationmodel->authenticate_user($username, $password)){
+            echo "Load";
+            //The code for successful authentication
+        }else{
+            //The code for failure after authentication
+        }
 
     }
 }
