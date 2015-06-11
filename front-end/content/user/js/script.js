@@ -425,10 +425,6 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
  * =====================================
  * */
 
-ocs.controller('registrationHandler', function ($scope, globalDetails, $http, $location, $state, $resource) {
-
-});
-
 
 
 ocs.filter('debug', function() {
