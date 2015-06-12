@@ -1,12 +1,16 @@
-<div class="container" ng-controller="signinHandler">
+<div class="container" ng-controller="dashboardHandler">
 <br />
-
-    <form name="signinform" class="form-signin">
-        <h1>Login to OCS</h1>
-        <br />
-        <input class="col-md-12 form-control" style="padding: 5px;" type="text" name="username" id="username" placeholder="Username" ng-model="username" required/>
-        <input class="col-md-12 form-control" style="padding: 5px; margin-top:8px;" type="text" name="password" id="password" placeholder="Password" ng-model="password" required/>
-        <button ng-click="signin(username, password)" class="btn-danger form-control col-md-12" style="padding: 5px; margin-top:8px;   " ng-disabled="signinform.$invalid">Submit</button>
-    </form>
-    <span ng-bind="status"></span>
+    <button class="align-right btn btn-lg btn-danger col-md-5 " ng-click="listStudents()">Fetch List</button>
+    <br /><br /><br /><br />
+    <div class="col-md-4">
+        <ul>
+            <li ng-repeat="x in listOfStudents" style="list-style-type: none;">
+                <span class="col-md-7">{{x.fullname}}</span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-7 col-md-offset-1">
+        {{currentStudent}}
+    </div>
+    {{a}}
 </div>

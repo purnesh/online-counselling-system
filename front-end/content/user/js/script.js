@@ -183,6 +183,13 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: 'views/list.html',
             controller: 'dashboardHandler'
         });
+    $stateProvider
+        .state('studentDetail',
+        {
+            url: '/studentDetail',
+            templateUrl: 'views/error.html',
+            controller: 'dashboardHandler'
+        });
 
 }]);
 /*
@@ -414,17 +421,21 @@ ocs.controller('signinHandler', function ($scope, globalDetails, $http, $locatio
  * CONTROLLER dashboardHandler BEGINS
  * This function will handle dashboard related requests
  * */
-ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $location, $state) {
+ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $location, $resource, $state) {
     $scope.formData = {};
-    $scope.registerStudent = function () {
+    /*$scope.registerStudent = function () {
            //Registration Code here
     };
-
-    $scope.listStudents = function (){
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/list_students/";
-        var b = $resource(branchApiUrl);
-        $scope.listOfStudents = b.get();
+     */
+    $scope.listStudents = function(){
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/list_students";
+        var b = $resource(fetchUrl);
+        $scope.listOfStudents = b.query();
     };
+
+    $scope.studentDetails = function(rank) {
+        $scope.currentStudent = rank;
+    }
 });
 /*
  * CONTROLLER dashboardHandler BEGINS
