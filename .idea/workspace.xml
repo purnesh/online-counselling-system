@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3118317b-9d75-4022-8c46-d75f7499879a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/error.html" afterPath="$PROJECT_DIR$/front-end/views/error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/list.html" afterPath="$PROJECT_DIR$/front-end/views/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,8 +31,8 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48863637" vertical-offset="5024" max-vertical-offset="5655">
-              <caret line="436" column="36" selection-start-line="436" selection-start-column="36" selection-end-line="436" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.53733766" vertical-offset="5024" max-vertical-offset="5685">
+              <caret line="438" column="31" selection-start-line="438" selection-start-column="31" selection-end-line="438" selection-end-column="31" />
               <folding>
                 <element signature="e#8572#9300#0" expanded="false" />
                 <element signature="e#9753#11073#0" expanded="false" />
@@ -445,7 +443,11 @@
       <created>1434073243211</created>
       <updated>1434073243211</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Commit 38 - Student Listing Complete&#10;&#10;The front end for student listing is complete. View Details is being worked out">
+      <created>1434076890944</created>
+      <updated>1434076890944</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -470,13 +472,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="24" width="1321" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961479" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17719568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17719568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -487,7 +490,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2314308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -528,7 +530,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Commit 04&#10;&#10;Testing environment setup complete" />
     <MESSAGE value="Commit 05&#10;&#10;Bootstrap Basic Template has been successfully integrated for all non-dashboard purposes." />
     <MESSAGE value="Commit 07 - Script Documented&#10;&#10;The JavaScript controller defined till now were properly documented for ease in future use." />
     <MESSAGE value="Commit 08 - Global Variables declared&#10;&#10;All global variable are now declared in a service in order to keep code and data separate." />
@@ -553,7 +554,8 @@
     <MESSAGE value="Commit 35 - Dashboard primary links and states configured. &#10;&#10;The primary links and states of dashboard have been configured. Also, the controllers for handling registration operations have been configured on the front end." />
     <MESSAGE value="Commit 35 - UI development for Registration form complete. &#10;&#10;The UI for registration form is complete. Starting work on backed in order to store the registered data." />
     <MESSAGE value="Commit 37 - Development of API for list of students has begun &#10;&#10;The registration form on halt. API for listing students and manipulating records has started" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 37 - Development of API for list of students has begun &#10;&#10;The registration form on halt. API for listing students and manipulating records has started" />
+    <MESSAGE value="Commit 38 - Student Listing Complete&#10;&#10;The front end for student listing is complete. View Details is being worked out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 38 - Student Listing Complete&#10;&#10;The front end for student listing is complete. View Details is being worked out" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -924,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48863637" vertical-offset="5024" max-vertical-offset="5655">
-          <caret line="436" column="36" selection-start-line="436" selection-start-column="36" selection-end-line="436" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.53733766" vertical-offset="5024" max-vertical-offset="5685">
+          <caret line="438" column="31" selection-start-line="438" selection-start-column="31" selection-end-line="438" selection-end-column="31" />
           <folding>
             <element signature="e#8572#9300#0" expanded="false" />
             <element signature="e#9753#11073#0" expanded="false" />

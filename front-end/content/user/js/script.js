@@ -434,7 +434,9 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
     };
 
     $scope.studentDetails = function(rank) {
-        $scope.currentStudent = rank;
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/student_details/" + rank;
+        var b = $resource(fetchUrl);
+        $scope.detailsOfStudent = b.query();
     }
 });
 /*
