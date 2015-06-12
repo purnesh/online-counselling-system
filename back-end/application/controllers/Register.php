@@ -14,7 +14,9 @@ class Register extends CI_Controller{
     }
 
     public function student(){
-
+        echo "red";
+        echo base_url();
+        echo $this->input->post('username');
     }
 }
 

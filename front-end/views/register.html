@@ -4,12 +4,11 @@
     <form name="studentRegistrationForm" class="form-register">
         <h1>Student Registration Form</h1>
         <br />
-        <input class="col-md-8 form-control" style="padding: 5px;" type="text" name="fullname" id="fullname" placeholder="Full Name" ng-model="fullname" required/>
-        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="fathername" id="fathername" placeholder="Father's Name" ng-model="fathername" required/>
-        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="address" id="address" placeholder="Address" ng-model="address" required/>
-        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="rank" id="rank" placeholder="JEE Rank" ng-model="rank" required/>
-        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number" ng-model="phonenumber" required/>
+        <input class="col-md-8 form-control" style="padding: 5px;" type="text" name="fullname" id="fullname" placeholder="Full Name" ng-model="formData.fullname" required/>
+        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="fathername" id="fathername" placeholder="Father's Name" ng-model="formData.fathername" required/>
+        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="address" id="address" placeholder="Address" ng-model="formData.address" required/>
+        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="rank" id="rank" placeholder="JEE Rank" ng-model="formData.rank" required/>
+        <input class="col-md-8 form-control" style="padding: 5px; margin-top:8px;" type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number" ng-model="formData.phonenumber" required/>
         <button ng-click="registerStudent()" class="btn-danger form-control col-md-12" style="padding: 5px; margin-top:8px;   " ng-disabled="studentRegistrationForm.$invalid">Submit</button>
     </form>
-    {{as}}
 </div>

@@ -177,10 +177,10 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             controller: 'dashboardHandler'
         });
     $stateProvider
-        .state('available',
+        .state('list',
         {
-            url: '/available',
-            templateUrl: 'views/available.html',
+            url: '/list',
+            templateUrl: 'views/list.html',
             controller: 'dashboardHandler'
         });
 
@@ -415,8 +415,15 @@ ocs.controller('signinHandler', function ($scope, globalDetails, $http, $locatio
  * This function will handle dashboard related requests
  * */
 ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $location, $state) {
+    $scope.formData = {};
     $scope.registerStudent = function () {
-        $scope.as = $scope.fullname;
+           //Registration Code here
+    };
+
+    $scope.listStudents = function (){
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/list_students/";
+        var b = $resource(branchApiUrl);
+        $scope.listOfStudents = b.get();
     };
 });
 /*
