@@ -308,12 +308,7 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails, $state) {
             href: "#display",
             id: "documents-required-navbar"
         },
-        {
-            state: "login",
-            name: "Login",
-            href: "#login",
-            id: "login-navbar"
-        },
+
         {
             state: "dashboard",
             name: "Dashboard",

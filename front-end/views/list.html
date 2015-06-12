@@ -2,15 +2,57 @@
 <br />
     <button class="align-right btn btn-lg btn-danger col-md-5 " ng-click="listStudents()">Fetch List</button>
     <br /><br /><br /><br />
-    <div class="col-md-4">
+    <div class="col-md-5">
         <ul>
-            <li ng-repeat="x in listOfStudents" style="list-style-type: none;">
-                <span class="col-md-7">{{x.fullname}}</span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
-            </li>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Rank</th>
+                    <th>Details</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="x in listOfStudents">
+                    <td>{{x.fullname}}</td>
+                    <td>{{x.rank}}</td>
+                    <td><button ng-click="studentDetails(x.rank)" class="btn btn-default">View Details</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--<li  style="list-style-type: none;">
+                <span class="col-md-7"></span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
+            </li-->
         </ul>
     </div>
-    <div class="col-md-7 col-md-offset-1">
-        {{currentStudent}}
+    <div class="col-md-6 col-md-offset-1">
+        <table class="table table-hover">
+            <tr>
+                <td>Name</td>
+                <td>{{detailsOfStudent[0].fullname}}</td>
+            </tr>
+            <tr>
+                <td>Father's Name</td>
+                <td>{{detailsOfStudent[0].fathername}}</td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>{{detailsOfStudent[0].dob}}</td>
+            </tr>
+            <tr>
+                <td>Rank</td>
+                <td>{{detailsOfStudent[0].rank}}</td>
+            </tr>
+            <tr>
+                <td>State Quota</td>
+                <td>{{detailsOfStudent[0].category | uppercase}}</td></td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>{{detailsOfStudent[0].subcategory | uppercase}}</td></td>
+            </tr>
+
+        </table>
     </div>
     {{a}}
 </div>
