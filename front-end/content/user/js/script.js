@@ -175,6 +175,13 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             controller: 'dashboardHandler'
         });
     $stateProvider
+        .state('alottedlist',
+        {
+            url: '/alottedlist',
+            templateUrl: 'views/alottedlist.html',
+            controller: 'dashboardHandler'
+        });
+    $stateProvider
         .state('studentDetail',
         {
             url: '/studentDetail',
@@ -430,6 +437,13 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var fetchUrl = "http://localhost/project/back-end/index.php/api/alot_seat/" + $scope.currentStudentRank + "/" + $scope.currentBranchCode;
         var seatAlotter = $resource(fetchUrl);
         $scope.listOfBranches = seatAlotter.query();
+    };
+
+    $scope.alottedStudents = function(){
+        $state.go('alottedlist');
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/alotted_students";
+        var b = $resource(fetchUrl);
+        $scope.listOfAlottedStudents = b.query();
     };
 });
 /*

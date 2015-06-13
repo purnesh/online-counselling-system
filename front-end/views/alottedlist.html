@@ -1,0 +1,28 @@
+<div class="container" ng-controller="dashboardHandler">
+<br />
+    <button class="align-right btn btn-lg btn-danger col-md-5 " ng-click="alottedStudents()">Fetch List</button>
+    <br /><br /><br /><br />
+    <div class="col-md-5">
+        <ul>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Rank</th>
+                    <th>Details</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="x in listOfAlottedStudents ">
+                    <td>{{x.fullname | capitalize}}</td>
+                    <td>{{x.rank}}</td>
+                    <td><button ng-click="studentDetails(x.rank)" class="btn btn-default">View Details</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--<li  style="list-style-type: none;">
+                <span class="col-md-7"></span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
+            </li-->
+        </ul>
+
+</div>

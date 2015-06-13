@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3118317b-9d75-4022-8c46-d75f7499879a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/list.html" afterPath="$PROJECT_DIR$/front-end/views/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front-end/views/alottedlist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/dashboard.html" afterPath="$PROJECT_DIR$/front-end/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/.idea/workspace.xml" afterPath="$PROJECT_DIR$/back-end/.idea/workspace.xml" />
@@ -33,8 +34,18 @@
       <file leaf-file-name="list.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-end/views/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.75" vertical-offset="606" max-vertical-offset="1185">
+            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1185">
               <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alottedlist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-end/views/alottedlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="510">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -43,8 +54,8 @@
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6104" max-vertical-offset="6795">
-              <caret line="433" column="0" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6267" max-vertical-offset="7095">
+              <caret line="440" column="0" selection-start-line="440" selection-start-column="0" selection-end-line="440" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,8 +64,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-end/views/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17736487" vertical-offset="0" max-vertical-offset="592">
-              <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+            <state vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="592">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -121,9 +132,10 @@
         <option value="$PROJECT_DIR$/back-end/application/controllers/Api.php" />
         <option value="$PROJECT_DIR$/front-end/views/error.html" />
         <option value="$PROJECT_DIR$/back-end/application/models/Api_data.php" />
-        <option value="$PROJECT_DIR$/front-end/views/dashboard.html" />
-        <option value="$PROJECT_DIR$/front-end/content/user/js/script.js" />
+        <option value="$PROJECT_DIR$/front-end/views/alottedlist.html" />
         <option value="$PROJECT_DIR$/front-end/views/list.html" />
+        <option value="$PROJECT_DIR$/front-end/content/user/js/script.js" />
+        <option value="$PROJECT_DIR$/front-end/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -364,7 +376,45 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <list size="0" />
@@ -503,7 +553,11 @@
       <created>1434171978717</created>
       <updated>1434171978717</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Commit 45 - Seats allotted&#10;&#10;The seats were succesfully alotted to candidates.">
+      <created>1434182016191</created>
+      <updated>1434182016191</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -586,7 +640,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Commit 10 - Dashboard Automation Complete&#10;&#10;Dashboard automation using Anlar is complete. View refactoring to begin." />
     <MESSAGE value="Commit 11 - Tests for the top navigation bar complete&#10;&#10;All tests for the top navigation bar are complete. The development of backend begins simultaneously." />
     <MESSAGE value="Commit 14 - Routing successfully tested&#10;&#10;Routing of views was successfully tested." />
     <MESSAGE value="Commit 15 - Views created&#10;&#10;Views were successfully created." />
@@ -611,19 +664,13 @@
     <MESSAGE value="Commit 40 - Student Details display and fetch complete.&#10;&#10;The student details have been successfully displayed and the API for the same is now active." />
     <MESSAGE value="Commit 41 - Front End for Available Choices complete&#10;&#10;Front end for available choices has been set up. Working on the API development for the same." />
     <MESSAGE value="Commit 43 - List of branches successfully displayed&#10;&#10;List of branches has been displayed successfully.  Alotment remains" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 43 - List of branches successfully displayed&#10;&#10;List of branches has been displayed successfully.  Alotment remains" />
+    <MESSAGE value="Commit 45 - Seats allotted&#10;&#10;The seats were succesfully alotted to candidates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 45 - Seats allotted&#10;&#10;The seats were succesfully alotted to candidates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front-end/content/user/js/jsTests/script_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/content/user/css/footer-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -954,26 +1001,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
+    <entry file="file://$PROJECT_DIR$/front-end/views/alottedlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6104" max-vertical-offset="6795">
-          <caret line="433" column="0" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="510">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/views/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.75" vertical-offset="606" max-vertical-offset="1185">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1185">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6267" max-vertical-offset="7095">
+          <caret line="440" column="0" selection-start-line="440" selection-start-column="0" selection-end-line="440" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17736487" vertical-offset="0" max-vertical-offset="592">
-          <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.2027027" vertical-offset="0" max-vertical-offset="592">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
