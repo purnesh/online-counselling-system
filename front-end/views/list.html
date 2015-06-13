@@ -57,14 +57,14 @@
             </tr>
 
             <tr>
-                <td><b><u><button class="btn btn-success btn-lg" ng-click="availableChoices(detailsOfStudent[0].rank)"> Fetch Available Choices</button></u></b></td><td></td>
+                <td><b><u><button class="btn btn-danger btn-lg" ng-click="availableChoices(detailsOfStudent[0].rank)"> Fetch Available Choices</button></u></b></td><td></td>
             </tr>
-            <tr>
+            <tr ng-repeat="x in listOfBranches">
                 <td>
-                    ASD
+                    {{x[1]}}
                 </td>
                 <td>
-                    ASD
+                    <button class="btn btn-success " ng-click="alotSeat(x[0])"> Alot Seat</button>
                 </td>
             </tr>
         </table>

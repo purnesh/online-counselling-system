@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a99edc3-513d-4bd9-948a-00bbd9aab859" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/../front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final-back.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +30,7 @@
       <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="52" selection-start="688" selection-end="710" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="555">
+            <state line="30" column="28" selection-start="793" selection-end="793" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -37,13 +39,17 @@
       <file leaf-file-name="Api_data.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="21" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.9933775" vertical-offset="0" max-vertical-offset="735">
+            <state line="68" column="32" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.61799663" vertical-offset="581" max-vertical-offset="1170">
               <folding>
-                <marker date="1434077648891" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
-                <marker date="1434077648891" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
-                <marker date="1434077648891" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
-                <marker date="1434077648891" expanded="true" signature="932:961" placeholder="select * fro..student_records..." />
-                <marker date="1434077648891" expanded="true" signature="1181:1227" placeholder="select * fro..student_records..." />
+                <marker date="1434171743231" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
+                <marker date="1434171743231" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
+                <marker date="1434171743231" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
+                <marker date="1434171743231" expanded="true" signature="932:961" placeholder="select * fro..student_records..." />
+                <marker date="1434171743231" expanded="true" signature="932:975" placeholder="select * fro..student_records..." />
+                <marker date="1434171743231" expanded="true" signature="1196:1242" placeholder="select * fro..student_records..." />
+                <marker date="1434171743231" expanded="true" signature="1464:1510" placeholder="select * fro..student_records..." />
+                <marker date="1434171743231" expanded="true" signature="1730:1764" placeholder="select branc..gbpuat_lob..." />
+                <marker date="1434171743231" expanded="true" signature="2403:2470" placeholder="select branc..gbpuat_lob..." />
               </folding>
             </state>
           </provider>
@@ -52,7 +58,7 @@
       <file leaf-file-name="Authenticate.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="585">
+            <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -61,7 +67,7 @@
       <file leaf-file-name="Register.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="390" selection-end="390" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="16" column="8" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -70,8 +76,10 @@
       <file leaf-file-name="Authenticationmodel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Authenticationmodel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="450">
-              <folding />
+            <state line="15" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="375">
+              <folding>
+                <marker date="1434000476403" expanded="true" signature="299:384" placeholder="select * fro..authentication_data..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -234,24 +242,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="final-back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="back-end" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -321,19 +311,24 @@
       <created>1432614349533</created>
       <updated>1432614349533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 42 - API for available_branches complete.&#10;&#10;Working on front end now.">
+      <created>1434170521324</created>
+      <updated>1434170521325</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="24" width="1321" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25254104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25645036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -341,12 +336,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -363,7 +357,8 @@
     </option>
     <MESSAGE value="Commit 12 - Backend JSON encoding tested. API model created.&#10;&#10;JSON Encoding Capability of Backend was tested and found to be completely functional. Also, the configuration for localhost database was added to the config files. Also, API model creation was created." />
     <MESSAGE value="Commit 19 - JWT library tested and fully functional. Time for RESTful API creation&#10;&#10;CORS Request, JSON Web Tokens, API for authentication, feedback and reception at AngularJS has been successfully tested." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 19 - JWT library tested and fully functional. Time for RESTful API creation&#10;&#10;CORS Request, JSON Web Tokens, API for authentication, feedback and reception at AngularJS has been successfully tested." />
+    <MESSAGE value="Commit 42 - API for available_branches complete.&#10;&#10;Working on front end now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 42 - API for available_branches complete.&#10;&#10;Working on front end now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -633,43 +628,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="8" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Authenticationmodel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="450">
+        <state line="15" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="375">
+          <folding>
+            <marker date="1434000476403" expanded="true" signature="299:384" placeholder="select * fro..authentication_data..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="28" selection-start="793" selection-end="793" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="390" selection-end="390" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="52" selection-start="688" selection-end="710" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="555">
+        <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="21" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.9933775" vertical-offset="0" max-vertical-offset="735">
+        <state line="68" column="32" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.61799663" vertical-offset="581" max-vertical-offset="1170">
           <folding>
-            <marker date="1434077648891" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
-            <marker date="1434077648891" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
-            <marker date="1434077648891" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
-            <marker date="1434077648891" expanded="true" signature="932:961" placeholder="select * fro..student_records..." />
-            <marker date="1434077648891" expanded="true" signature="1181:1227" placeholder="select * fro..student_records..." />
+            <marker date="1434171743231" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
+            <marker date="1434171743231" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
+            <marker date="1434171743231" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
+            <marker date="1434171743231" expanded="true" signature="932:961" placeholder="select * fro..student_records..." />
+            <marker date="1434171743231" expanded="true" signature="932:975" placeholder="select * fro..student_records..." />
+            <marker date="1434171743231" expanded="true" signature="1196:1242" placeholder="select * fro..student_records..." />
+            <marker date="1434171743231" expanded="true" signature="1464:1510" placeholder="select * fro..student_records..." />
+            <marker date="1434171743231" expanded="true" signature="1730:1764" placeholder="select branc..gbpuat_lob..." />
+            <marker date="1434171743231" expanded="true" signature="2403:2470" placeholder="select branc..gbpuat_lob..." />
           </folding>
         </state>
       </provider>

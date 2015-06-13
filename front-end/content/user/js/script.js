@@ -137,16 +137,7 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 branchCode: 'iped'
             }
         });
-    $stateProvider
-        .state('display.bio',
-        {
-            url: '/display.bio',
-            templateUrl: 'views/display.html',
-            controller: 'branchDisplay',
-            data: {
-                branchCode: 'bio'
-            }
-        });
+
 
     $stateProvider
         .state('login',
@@ -268,9 +259,6 @@ ocs.controller('branchController', function($scope, $state, $http, $resource, gl
             case 'it':
                 $scope.branchName = "Information Technology";
                 break;
-            case 'bio':
-                $scope.branchName = "B. Tech Biotechnology";
-                break;
         }
     }
     else{
@@ -371,10 +359,6 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
             {
                 href: "display.iped",
                 displayText: "Production Engineering"
-            },
-            {
-                href: "display.bio",
-                displayText: "B. Tech, Biotechnology"
             }
         ]
     };
@@ -435,9 +419,11 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
     }
 
     $scope.availableChoices = function(rank) {
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/available_options/" + rank;
+        $scope.currentStudentRank = rank;
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/available_choices/" + rank;
         var b = $resource(fetchUrl);
-        $scope.detailsOfStudent = b.query();
+        $scope.listOfBranches = b.query();
+        console.log($scope.listOfBranches);
     }
 });
 /*
