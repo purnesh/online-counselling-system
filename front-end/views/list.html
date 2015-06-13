@@ -14,7 +14,7 @@
                 </thead>
                 <tbody>
                 <tr ng-repeat="x in listOfStudents ">
-                    <td>{{x.fullname}}</td>
+                    <td>{{x.fullname | capitalize}}</td>
                     <td>{{x.rank}}</td>
                     <td><button ng-click="studentDetails(x.rank)" class="btn btn-default">View Details</td>
                 </tr>
@@ -29,11 +29,11 @@
         <table class="table table-hover">
             <tr>
                 <td>Name</td>
-                <td>{{detailsOfStudent[0].fullname}}</td>
+                <td>{{detailsOfStudent[0].fullname  | capitalize}}</td>
             </tr>
             <tr>
                 <td>Father's Name</td>
-                <td>{{detailsOfStudent[0].fathername}}</td>
+                <td>{{detailsOfStudent[0].fathername  | capitalize}}</td>
             </tr>
             <tr>
                 <td>Date of Birth</td>
