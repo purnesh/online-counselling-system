@@ -16,7 +16,7 @@
                 <tr ng-repeat="x in listOfAlottedStudents ">
                     <td>{{x.fullname | capitalize}}</td>
                     <td>{{x.rank}}</td>
-                    <td><button ng-click="studentDetails(x.rank)" class="btn btn-default">View Details</td>
+                    <td><button ng-click="alottmentLetter(x.rank)" class="btn btn-default">View Details</td>
                 </tr>
                 </tbody>
             </table>
@@ -24,5 +24,72 @@
                 <span class="col-md-7"></span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
             </li-->
         </ul>
+    </div>
+    <div class="col-md-6" style="margin-top: -50px;">
+        <div class="page-header">
+            <h2>Alottment Letter</h2>
+        </div>
+        <p class="lead">Congratulations!</p>
+        <table>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    {{details[0]| capitalize}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Father's Name:
+                </td>
+                <td>
+                    {{details[1]| capitalize}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rank:
+                </td>
+                <td>
+                    {{details[2]| capitalize}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    State/All India:
+                </td>
+                <td>
+                    {{details[3]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Category:
+                </td>
+                <td>
+                    {{details[4]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sub-Category:
+                </td>
+                <td>
+                    {{details[5]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Branch Alotted:
+                </td>
+                <td>
+                    <b>{{details[6] | capitalize}}</b>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
 
 </div>

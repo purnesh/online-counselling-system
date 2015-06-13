@@ -182,10 +182,10 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             controller: 'dashboardHandler'
         });
     $stateProvider
-        .state('studentDetail',
+        .state('alottmentletter',
         {
-            url: '/studentDetail',
-            templateUrl: 'views/error.html',
+            url: '/alottmentletter',
+            templateUrl: 'views/alottmentletter.html',
             controller: 'dashboardHandler'
         });
 
@@ -444,6 +444,14 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var fetchUrl = "http://localhost/project/back-end/index.php/api/alotted_students";
         var b = $resource(fetchUrl);
         $scope.listOfAlottedStudents = b.query();
+    };
+
+    $scope.alottmentLetter = function(rank) {
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/alottment_letter/" + rank;
+        var b = $resource(fetchUrl);
+        $scope.details = b.query();
+        console.log($scope.details);
+
     };
 });
 /*
