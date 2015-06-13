@@ -433,6 +433,12 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var b = $resource(fetchUrl);
         $scope.detailsOfStudent = b.query();
     }
+
+    $scope.availableChoices = function(rank) {
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/available_options/" + rank;
+        var b = $resource(fetchUrl);
+        $scope.detailsOfStudent = b.query();
+    }
 });
 /*
  * CONTROLLER dashboardHandler BEGINS

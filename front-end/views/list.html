@@ -13,7 +13,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="x in listOfStudents">
+                <tr ng-repeat="x in listOfStudents ">
                     <td>{{x.fullname}}</td>
                     <td>{{x.rank}}</td>
                     <td><button ng-click="studentDetails(x.rank)" class="btn btn-default">View Details</td>
@@ -45,13 +45,28 @@
             </tr>
             <tr>
                 <td>State Quota</td>
-                <td>{{detailsOfStudent[0].category | uppercase}}</td></td>
+                <td>{{detailsOfStudent[0].state | uppercase}}</td></td>
             </tr>
             <tr>
                 <td>Category</td>
+                <td>{{detailsOfStudent[0].category | uppercase}}</td></td>
+            </tr>
+            <tr>
+                <td>Sub-Category</td>
                 <td>{{detailsOfStudent[0].subcategory | uppercase}}</td></td>
             </tr>
 
+            <tr>
+                <td><b><u><button class="btn btn-success btn-lg" ng-click="availableChoices(detailsOfStudent[0].rank)"> Fetch Available Choices</button></u></b></td><td></td>
+            </tr>
+            <tr>
+                <td>
+                    ASD
+                </td>
+                <td>
+                    ASD
+                </td>
+            </tr>
         </table>
     </div>
     {{a}}
