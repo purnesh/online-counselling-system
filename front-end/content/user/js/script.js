@@ -416,15 +416,21 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var fetchUrl = "http://localhost/project/back-end/index.php/api/student_details/" + rank;
         var b = $resource(fetchUrl);
         $scope.detailsOfStudent = b.query();
-    }
+    };
 
     $scope.availableChoices = function(rank) {
         $scope.currentStudentRank = rank;
         var fetchUrl = "http://localhost/project/back-end/index.php/api/available_choices/" + rank;
         var b = $resource(fetchUrl);
         $scope.listOfBranches = b.query();
-        console.log($scope.listOfBranches);
-    }
+    };
+
+    $scope.alotSeat = function(branchCode) {
+        $scope.currentBranchCode = branchCode;
+        var fetchUrl = "http://localhost/project/back-end/index.php/api/alot_seat/" + $scope.currentStudentRank + "/" + $scope.currentBranchCode;
+        var seatAlotter = $resource(fetchUrl);
+        $scope.listOfBranches = seatAlotter.query();
+    };
 });
 /*
  * CONTROLLER dashboardHandler BEGINS
