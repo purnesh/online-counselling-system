@@ -222,7 +222,19 @@ ocs.factory('globalDetails', function () {
 * */
 ocs.controller('universalHandler', function($scope, $http, globalDetails){
     $scope.projectTitle = globalDetails.projectTitle;
+    if($scope.projectTitle){
+        console.log("Test: Successful: Load Page Title");
+    }
+    else{
+        console.log("Test: Failed: Load Page Title");
+    }
     $scope.projectAuthor = globalDetails.projectAuthor;
+    if($scope.projectTitle){
+        console.log("Test: Successful: Load Page Author");
+    }
+    else{
+        console.log("Test: Failed: Load Page Author");
+    }
 });
 /*
 * CONTROLLER universalHandler ENDS
@@ -388,7 +400,9 @@ ocs.controller('dashboardSidebarHandler', function($scope, globalDetails){
 * */
 ocs.controller('signinHandler', function ($scope, globalDetails, $http, $location, $state) {
     if($scope.isAuth == 1){
+        console.log("Test: Successful: Display Application State Attained");
         $state.go('display');
+
     }else{
         $scope.status = $state.current.name;
         $scope.signin = function (username, password) {
@@ -414,24 +428,39 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
            //Registration Code here
     };
      */
+    console.log("Test: Successful: Dashboard Application State Attained");
     $scope.studentDetailPage = 0;
     $scope.listOfStudentsPage = 1;
     $scope.listOfAvailableChoicesPage = 0;
 
     $scope.listStudents = function(){
+        console.log("Test: Successful: Counselling Platform Loaded");
         $scope.studentDetailPage = 0;
         $scope.listOfStudentsPage = 1;
         var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/list_students";
         var b = $resource(fetchUrl);
         $scope.listOfStudents = b.query();
+        if($scope.listOfStudents){
+            console.log("Test: Successful: The list of Students was successfully fetched");
+        }
+        else{
+            console.log("Test: Failed: There was a problem fetching the list of students");
+        }
     };
 
     $scope.studentDetails = function(rank) {
         $scope.studentDetailPage = 1;
+        var testerString = "Test: Successful: Fetch Details for student with rank - " + rank;
         $scope.listOfStudentsPage = 0;
         var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/student_details/" + rank;
         var b = $resource(fetchUrl);
         $scope.detailsOfStudent = b.query();
+        if($scope.detailsOfStudent){
+            console.log(testerString);
+        }
+        else{
+            console.log("failed to Fetch student records");
+        }
     };
 
     $scope.availableChoices = function(rank) {
@@ -441,13 +470,27 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/available_choices/" + rank;
         var b = $resource(fetchUrl);
         $scope.listOfBranches = b.query();
+        if($scope.listOfBranches){
+            console.log("Test: Successful: Fetch Available branches for student with rank - " + rank);
+        }
+        else{
+            console.log("Test: Failed: Fetch Available branches for student with rank - " + rank);
+        }
     };
 
     $scope.alotSeat = function(collegeCode, branchCode) {
         $scope.currentBranchCode = branchCode;
-        console.log(branchCode);
-        console.log(collegeCode.code);
-
+        var urlPartOne = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/alot_seat";
+        var urlPartTwo = "/" + $scope.currentStudentRank + "/" + branchCode + "/" + collegeCode.code;
+        var fetchUrl = urlPartOne + urlPartTwo;
+        var b = $resource(fetchUrl);
+        $scope.alotStatus = b.get();
+        if($scope.alotStatus){
+            console.log("Test: Successful: Seat Alotment for student with rank - " + $scope.currentStudentRank);
+        }
+        else{
+            console.log("Test: Failed: Seat Alotment for student with rank - " + $scope.currentStudentRank);
+        }
     };
 
     $scope.alottedStudents = function(){

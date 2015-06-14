@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3118317b-9d75-4022-8c46-d75f7499879a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/alottedlist.html" afterPath="$PROJECT_DIR$/front-end/views/alottedlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/list.html" afterPath="$PROJECT_DIR$/front-end/views/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/.idea/workspace.xml" afterPath="$PROJECT_DIR$/back-end/.idea/workspace.xml" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62189054" vertical-offset="6315" max-vertical-offset="7380">
-              <caret line="446" column="46" selection-start-line="446" selection-start-column="46" selection-end-line="446" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.65174127" vertical-offset="6897" max-vertical-offset="8025">
+              <caret line="486" column="22" selection-start-line="486" selection-start-column="22" selection-end-line="486" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -64,7 +62,7 @@
       <file leaf-file-name="alottmentletter.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-end/views/alottmentletter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
               <folding />
             </state>
@@ -576,7 +574,11 @@
       <created>1434184438861</created>
       <updated>1434184438861</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Commit 48 - UI for counselling platform has been improved. Introduction of Colleges has been done&#10;&#10;New College (CBSH) was introduced in the OCS. Also, Bio tech was added as a branch for this new college.">
+      <created>1434316654768</created>
+      <updated>1434316654768</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -603,6 +605,7 @@
     <frame x="45" y="24" width="1321" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -618,7 +621,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2314308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -659,7 +661,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Commit 15 - Views created&#10;&#10;Views were successfully created." />
     <MESSAGE value="Commit 16 - URL based routing implemented&#10;&#10;Basic routing is implemented." />
     <MESSAGE value="Commit 18 - Front end working fine. &#10;&#10;Front end with basic routing is working fine. Work on revamping the signin mechanism begins." />
     <MESSAGE value="Commit 20 - JWT across CORS using AngularJS tested successfully. &#10;&#10;JWT tokens were created and tested to be working fine in AngularJS." />
@@ -684,7 +685,8 @@
     <MESSAGE value="Commit 45 - Seats allotted&#10;&#10;The seats were succesfully alotted to candidates." />
     <MESSAGE value="Commit 46 - List of allotted students ready&#10;&#10;Starting work on the alottment letter page." />
     <MESSAGE value="Commit 47 - Code Complete&#10;&#10;Starting work on the alottment letter page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 47 - Code Complete&#10;&#10;Starting work on the alottment letter page." />
+    <MESSAGE value="Commit 48 - UI for counselling platform has been improved. Introduction of Colleges has been done&#10;&#10;New College (CBSH) was introduced in the OCS. Also, Bio tech was added as a branch for this new college." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 48 - UI for counselling platform has been improved. Introduction of Colleges has been done&#10;&#10;New College (CBSH) was introduced in the OCS. Also, Bio tech was added as a branch for this new college." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1021,6 +1023,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/views/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.75" vertical-offset="816" max-vertical-offset="1395">
+          <caret line="78" column="81" selection-start-line="78" selection-start-column="81" selection-end-line="78" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/views/alottmentletter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
@@ -1037,18 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/views/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.75" vertical-offset="816" max-vertical-offset="1395">
-          <caret line="78" column="81" selection-start-line="78" selection-start-column="81" selection-end-line="78" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62189054" vertical-offset="6315" max-vertical-offset="7380">
-          <caret line="446" column="46" selection-start-line="446" selection-start-column="46" selection-end-line="446" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.65174127" vertical-offset="6897" max-vertical-offset="8025">
+          <caret line="486" column="22" selection-start-line="486" selection-start-column="22" selection-end-line="486" selection-end-column="22" />
           <folding />
         </state>
       </provider>

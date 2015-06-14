@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a99edc3-513d-4bd9-948a-00bbd9aab859" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/alottedlist.html" afterPath="$PROJECT_DIR$/../front-end/views/alottedlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/list.html" afterPath="$PROJECT_DIR$/../front-end/views/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/../front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final-back.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,39 +25,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Api.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6490066" vertical-offset="58" max-vertical-offset="795">
+            <state line="34" column="13" selection-start="898" selection-end="898" vertical-scroll-proportion="-16.958334" vertical-offset="103" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Api_data.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Api_data.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="41" selection-start="3153" selection-end="3153" vertical-scroll-proportion="-22.125" vertical-offset="684" max-vertical-offset="2100">
+            <state line="116" column="31" selection-start="4277" selection-end="4277" vertical-scroll-proportion="0.44162437" vertical-offset="1404" max-vertical-offset="2385">
               <folding>
-                <marker date="1434314740682" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
-                <marker date="1434314740682" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
-                <marker date="1434314740682" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
-                <marker date="1434314740682" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
-                <marker date="1434314740682" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
-                <marker date="1434314740682" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="1841:1887" placeholder="select * fro..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="2660:2673" placeholder="select * fro..." />
-                <marker date="1434314740682" expanded="true" signature="3284:3311" placeholder="select * fro..$$college_code..." />
-                <marker date="1434314740682" expanded="true" signature="3503:3529" placeholder="select * fro..college_list..." />
-                <marker date="1434314740682" expanded="true" signature="3684:3730" placeholder="select * fro..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="4067:4122" placeholder="INSERT INTO ..." />
-                <marker date="1434314740682" expanded="true" signature="4255:4301" placeholder="select * fro..student_records..." />
-                <marker date="1434314740682" expanded="true" signature="4754:4855" placeholder="select * FRO..gbpuat_lob..." />
-                <marker date="1434314740682" expanded="true" signature="4801:4854" placeholder="select branc..alottment_records..." />
+                <marker date="1434321203094" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
+                <marker date="1434321203094" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
+                <marker date="1434321203094" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
+                <marker date="1434321203094" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
+                <marker date="1434321203094" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
+                <marker date="1434321203094" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="1841:1887" placeholder="select * fro..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="2660:2673" placeholder="select * fro..." />
+                <marker date="1434321203094" expanded="true" signature="3284:3311" placeholder="select * fro..$$college_code..." />
+                <marker date="1434321203094" expanded="true" signature="3503:3529" placeholder="select * fro..college_list..." />
+                <marker date="1434321203094" expanded="true" signature="3694:3740" placeholder="select * fro..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="4077:4144" placeholder="INSERT INTO ..." />
+                <marker date="1434321203094" expanded="true" signature="4588:4664" placeholder="update $tabl..." />
+                <marker date="1434321203094" expanded="true" signature="4871:4917" placeholder="select * fro..student_records..." />
+                <marker date="1434321203094" expanded="true" signature="5370:5471" placeholder="select * FRO..gbpuat_lob..." />
+                <marker date="1434321203094" expanded="true" signature="5417:5470" placeholder="select branc..alottment_records..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +67,7 @@
       <file leaf-file-name="Authenticate.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="585">
+            <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -662,44 +659,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="898" selection-end="898" vertical-scroll-proportion="-16.958334" vertical-offset="103" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="585">
+        <state line="12" column="0" selection-start="199" selection-end="422" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="41" selection-start="3153" selection-end="3153" vertical-scroll-proportion="-22.125" vertical-offset="684" max-vertical-offset="2100">
+        <state line="116" column="31" selection-start="4277" selection-end="4277" vertical-scroll-proportion="0.44162437" vertical-offset="1404" max-vertical-offset="2385">
           <folding>
-            <marker date="1434314740682" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
-            <marker date="1434314740682" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
-            <marker date="1434314740682" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
-            <marker date="1434314740682" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
-            <marker date="1434314740682" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
-            <marker date="1434314740682" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="1841:1887" placeholder="select * fro..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="2660:2673" placeholder="select * fro..." />
-            <marker date="1434314740682" expanded="true" signature="3284:3311" placeholder="select * fro..$$college_code..." />
-            <marker date="1434314740682" expanded="true" signature="3503:3529" placeholder="select * fro..college_list..." />
-            <marker date="1434314740682" expanded="true" signature="3684:3730" placeholder="select * fro..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="4067:4122" placeholder="INSERT INTO ..." />
-            <marker date="1434314740682" expanded="true" signature="4255:4301" placeholder="select * fro..student_records..." />
-            <marker date="1434314740682" expanded="true" signature="4754:4855" placeholder="select * FRO..gbpuat_lob..." />
-            <marker date="1434314740682" expanded="true" signature="4801:4854" placeholder="select branc..alottment_records..." />
+            <marker date="1434321203094" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
+            <marker date="1434321203094" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
+            <marker date="1434321203094" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
+            <marker date="1434321203094" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
+            <marker date="1434321203094" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
+            <marker date="1434321203094" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="1841:1887" placeholder="select * fro..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="2660:2673" placeholder="select * fro..." />
+            <marker date="1434321203094" expanded="true" signature="3284:3311" placeholder="select * fro..$$college_code..." />
+            <marker date="1434321203094" expanded="true" signature="3503:3529" placeholder="select * fro..college_list..." />
+            <marker date="1434321203094" expanded="true" signature="3694:3740" placeholder="select * fro..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="4077:4144" placeholder="INSERT INTO ..." />
+            <marker date="1434321203094" expanded="true" signature="4588:4664" placeholder="update $tabl..." />
+            <marker date="1434321203094" expanded="true" signature="4871:4917" placeholder="select * fro..student_records..." />
+            <marker date="1434321203094" expanded="true" signature="5370:5471" placeholder="select * FRO..gbpuat_lob..." />
+            <marker date="1434321203094" expanded="true" signature="5417:5470" placeholder="select branc..alottment_records..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6490066" vertical-offset="58" max-vertical-offset="795">
-          <folding />
         </state>
       </provider>
     </entry>
