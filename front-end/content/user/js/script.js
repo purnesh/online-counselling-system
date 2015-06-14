@@ -205,6 +205,7 @@ ocs.factory('globalDetails', function () {
     globalvar.projectTitle = "Online Counselling System";
     globalvar.projectAuthor = "Purnesh Tripathi";
     globalvar.collegeName = "College of Technology, GBPUAT, Pantnagar";
+    globalvar.ruthLessDetail = "localhost";
     globalvar.isAuth = 0;
     return globalvar;
 });
@@ -238,7 +239,7 @@ ocs.controller('universalHandler', function($scope, $http, globalDetails){
 ocs.controller('branchController', function($scope, $state, $http, $resource, globalDetails){
     if($state.current.data !== undefined){
         $scope.branchCode = $state.current.data.branchCode;
-        var branchApiUrl = "http://localhost/project/back-end/index.php/api/branch_info/" + $scope.branchCode;
+        var branchApiUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/branch_info/" + $scope.branchCode;
         var b = $resource(branchApiUrl);
         $scope.branchVacancyData = b.get();
         switch($state.current.data.branchCode) {
@@ -391,7 +392,7 @@ ocs.controller('signinHandler', function ($scope, globalDetails, $http, $locatio
     }else{
         $scope.status = $state.current.name;
         $scope.signin = function (username, password) {
-            $scope.corsUrl = 'http://localhost/project/back-end/index.php/authenticate/user/'+username+'/'+password;
+            $scope.corsUrl = 'http://'+ globalDetails.ruthLessDetail +'/project/back-end/index.php/authenticate/user/'+username+'/'+password;
 
         }
     }
@@ -413,41 +414,51 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
            //Registration Code here
     };
      */
+    $scope.studentDetailPage = 0;
+    $scope.listOfStudentsPage = 1;
+    $scope.listOfAvailableChoicesPage = 0;
+
     $scope.listStudents = function(){
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/list_students";
+        $scope.studentDetailPage = 0;
+        $scope.listOfStudentsPage = 1;
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/list_students";
         var b = $resource(fetchUrl);
         $scope.listOfStudents = b.query();
     };
 
     $scope.studentDetails = function(rank) {
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/student_details/" + rank;
+        $scope.studentDetailPage = 1;
+        $scope.listOfStudentsPage = 0;
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/student_details/" + rank;
         var b = $resource(fetchUrl);
         $scope.detailsOfStudent = b.query();
     };
 
     $scope.availableChoices = function(rank) {
+        $scope.listOfStudentsPage = 0;
+        $scope.listOfAvailableChoicesPage = 1;
         $scope.currentStudentRank = rank;
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/available_choices/" + rank;
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/available_choices/" + rank;
         var b = $resource(fetchUrl);
         $scope.listOfBranches = b.query();
     };
 
-    $scope.alotSeat = function(branchCode) {
+    $scope.alotSeat = function(collegeCode, branchCode) {
         $scope.currentBranchCode = branchCode;
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/alot_seat/" + $scope.currentStudentRank + "/" + $scope.currentBranchCode;
-        var seatAlotter = $resource(fetchUrl);
-        $scope.listOfBranches = seatAlotter.query();
+        console.log(branchCode);
+        console.log(collegeCode.code);
+
     };
 
     $scope.alottedStudents = function(){
         $state.go('alottedlist');
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/alotted_students";
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/alotted_students";
         var b = $resource(fetchUrl);
         $scope.listOfAlottedStudents = b.query();
     };
 
     $scope.alottmentLetter = function(rank) {
-        var fetchUrl = "http://localhost/project/back-end/index.php/api/alottment_letter/" + rank;
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/alottment_letter/" + rank;
         var b = $resource(fetchUrl);
         $scope.details = b.query();
         console.log($scope.details);

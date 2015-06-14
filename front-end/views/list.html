@@ -4,21 +4,60 @@
     <br /><br /><br /><br />
     <div class="col-md-5">
         <ul>
-            <table class="table table-hover">
+            <table class="table table-hover" ng-show="listOfStudentsPage">
                 <thead>
                 <tr>
                     <th>Full Name</th>
-                    <th>Rank</th>
+                    <th>AIR</th>
                     <th>Details</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="x in listOfStudents ">
+                <tr ng-repeat="x in listOfStudents">
                     <td>{{x.fullname | capitalize}}</td>
                     <td>{{x.rank}}</td>
                     <td><button ng-click="studentDetails(x.rank)" class="btn btn-default">View Details</td>
                 </tr>
                 </tbody>
+            </table>
+            <table class="table table-hover"  ng-show="studentDetailPage">
+                <tr>
+                    <td>Name</td>
+                    <td>{{detailsOfStudent[0].fullname  | capitalize}}</td>
+                </tr>
+                <tr>
+                    <td>Father's Name</td>
+                    <td>{{detailsOfStudent[0].fathername  | capitalize}}</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>{{detailsOfStudent[0].dob}}</td>
+                </tr>
+                <tr>
+                    <td>All India Rank</td>
+                    <td>{{detailsOfStudent[0].rank}}</td>
+                </tr>
+                <tr>
+                    <td>State Rank</td>
+                    <td>{{detailsOfStudent[0].state_rank}}</td>
+                </tr>
+                <tr>
+                    <td>State Quota</td>
+                    <td>{{detailsOfStudent[0].state | uppercase}}</td></td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>{{detailsOfStudent[0].category | uppercase}}</td></td>
+                </tr>
+                <tr>
+                    <td>Sub-Category</td>
+                    <td>{{detailsOfStudent[0].subcategory | uppercase}}</td></td>
+                </tr>
+
+                <tr>
+                    <td><b><u><button class="btn btn-danger btn-lg" ng-click="availableChoices(detailsOfStudent[0].rank)"> Fetch Available Choices</button></u></b></td><td></td>
+                </tr>
+
             </table>
             <!--<li  style="list-style-type: none;">
                 <span class="col-md-7"></span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
@@ -26,48 +65,23 @@
         </ul>
     </div>
     <div class="col-md-6 col-md-offset-1">
-        <table class="table table-hover">
-            <tr>
-                <td>Name</td>
-                <td>{{detailsOfStudent[0].fullname  | capitalize}}</td>
-            </tr>
-            <tr>
-                <td>Father's Name</td>
-                <td>{{detailsOfStudent[0].fathername  | capitalize}}</td>
-            </tr>
-            <tr>
-                <td>Date of Birth</td>
-                <td>{{detailsOfStudent[0].dob}}</td>
-            </tr>
-            <tr>
-                <td>Rank</td>
-                <td>{{detailsOfStudent[0].rank}}</td>
-            </tr>
-            <tr>
-                <td>State Quota</td>
-                <td>{{detailsOfStudent[0].state | uppercase}}</td></td>
-            </tr>
-            <tr>
-                <td>Category</td>
-                <td>{{detailsOfStudent[0].category | uppercase}}</td></td>
-            </tr>
-            <tr>
-                <td>Sub-Category</td>
-                <td>{{detailsOfStudent[0].subcategory | uppercase}}</td></td>
-            </tr>
-
-            <tr>
-                <td><b><u><button class="btn btn-danger btn-lg" ng-click="availableChoices(detailsOfStudent[0].rank)"> Fetch Available Choices</button></u></b></td><td></td>
-            </tr>
+        <table class='table' ng-show="listOfAvailableChoicesPage">
             <tr ng-repeat="x in listOfBranches">
+
                 <td>
-                    {{x[1]}}
+                    {{x[1].branch_name}}
                 </td>
                 <td>
-                    <button class="btn btn-success " ng-click="alotSeat(x[0])"> Alot Seat</button>
+                    {{x[3].name}}
+                </td>
+
+                <td>
+                    <button class="btn btn-success " ng-click="alotSeat(x[3],x[0])"> Alot Seat</button>
                 </td>
             </tr>
         </table>
+
     </div>
-    {{a}}
+
+
 </div>

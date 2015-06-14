@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a99edc3-513d-4bd9-948a-00bbd9aab859" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../front-end/views/alottmentletter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/dashboard.html" afterPath="$PROJECT_DIR$/../front-end/views/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/alottedlist.html" afterPath="$PROJECT_DIR$/../front-end/views/alottedlist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/views/list.html" afterPath="$PROJECT_DIR$/../front-end/views/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/../front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final-back.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,38 +29,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Api.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Api.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="54" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-23.833334" vertical-offset="58" max-vertical-offset="795">
+            <state line="30" column="13" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6490066" vertical-offset="58" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Api_data.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Api_data.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="32" selection-start="4512" selection-end="4512" vertical-scroll-proportion="0.5925297" vertical-offset="1271" max-vertical-offset="1860">
+            <state line="86" column="41" selection-start="3153" selection-end="3153" vertical-scroll-proportion="-22.125" vertical-offset="684" max-vertical-offset="2100">
               <folding>
-                <marker date="1434184210432" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
-                <marker date="1434184210432" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
-                <marker date="1434184210432" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
-                <marker date="1434184210432" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
-                <marker date="1434184210432" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
-                <marker date="1434184210432" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="1839:1885" placeholder="select * fro..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="2234:2268" placeholder="select branc..gbpuat_lob..." />
-                <marker date="1434184210432" expanded="true" signature="2907:2974" placeholder="select branc..gbpuat_lob..." />
-                <marker date="1434184210432" expanded="true" signature="3493:3539" placeholder="select * fro..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="3876:3931" placeholder="INSERT INTO ..." />
-                <marker date="1434184210432" expanded="true" signature="4064:4110" placeholder="select * fro..student_records..." />
-                <marker date="1434184210432" expanded="true" signature="4563:4664" placeholder="select * FRO..gbpuat_lob..." />
-                <marker date="1434184210432" expanded="true" signature="4610:4663" placeholder="select branc..alottment_records..." />
+                <marker date="1434314740682" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
+                <marker date="1434314740682" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
+                <marker date="1434314740682" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
+                <marker date="1434314740682" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
+                <marker date="1434314740682" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
+                <marker date="1434314740682" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="1841:1887" placeholder="select * fro..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="2660:2673" placeholder="select * fro..." />
+                <marker date="1434314740682" expanded="true" signature="3284:3311" placeholder="select * fro..$$college_code..." />
+                <marker date="1434314740682" expanded="true" signature="3503:3529" placeholder="select * fro..college_list..." />
+                <marker date="1434314740682" expanded="true" signature="3684:3730" placeholder="select * fro..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="4067:4122" placeholder="INSERT INTO ..." />
+                <marker date="1434314740682" expanded="true" signature="4255:4301" placeholder="select * fro..student_records..." />
+                <marker date="1434314740682" expanded="true" signature="4754:4855" placeholder="select * FRO..gbpuat_lob..." />
+                <marker date="1434314740682" expanded="true" signature="4801:4854" placeholder="select branc..alottment_records..." />
               </folding>
             </state>
           </provider>
@@ -166,6 +168,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,7 +257,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,13 +339,12 @@
     <frame x="45" y="24" width="1321" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26035964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26426896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -351,11 +352,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -667,36 +669,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="54" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-23.833334" vertical-offset="58" max-vertical-offset="795">
-          <folding />
+        <state line="86" column="41" selection-start="3153" selection-end="3153" vertical-scroll-proportion="-22.125" vertical-offset="684" max-vertical-offset="2100">
+          <folding>
+            <marker date="1434314740682" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
+            <marker date="1434314740682" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
+            <marker date="1434314740682" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
+            <marker date="1434314740682" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
+            <marker date="1434314740682" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
+            <marker date="1434314740682" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="1841:1887" placeholder="select * fro..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="2660:2673" placeholder="select * fro..." />
+            <marker date="1434314740682" expanded="true" signature="3284:3311" placeholder="select * fro..$$college_code..." />
+            <marker date="1434314740682" expanded="true" signature="3503:3529" placeholder="select * fro..college_list..." />
+            <marker date="1434314740682" expanded="true" signature="3684:3730" placeholder="select * fro..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="4067:4122" placeholder="INSERT INTO ..." />
+            <marker date="1434314740682" expanded="true" signature="4255:4301" placeholder="select * fro..student_records..." />
+            <marker date="1434314740682" expanded="true" signature="4754:4855" placeholder="select * FRO..gbpuat_lob..." />
+            <marker date="1434314740682" expanded="true" signature="4801:4854" placeholder="select branc..alottment_records..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Api_data.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="32" selection-start="4512" selection-end="4512" vertical-scroll-proportion="0.5925297" vertical-offset="1271" max-vertical-offset="1860">
-          <folding>
-            <marker date="1434184210432" expanded="true" signature="268:301" placeholder="select * fro..authentication_data..." />
-            <marker date="1434184210432" expanded="true" signature="510:545" placeholder="select * fro..gbpuat_ai_$branchCode..." />
-            <marker date="1434184210432" expanded="true" signature="647:682" placeholder="select * fro..gbpuat_uk_$branchCode..." />
-            <marker date="1434184210432" expanded="true" signature="932:1016" placeholder="select * fro..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="932:1032" placeholder="select * fro..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="932:1030" placeholder="SELECT * FRO..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="981:1015" placeholder="SELECT rank ..alottment_records..." />
-            <marker date="1434184210432" expanded="true" signature="1255:1350" placeholder="SELECT * FRO..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="1301:1335" placeholder="SELECT rank ..alottment_records..." />
-            <marker date="1434184210432" expanded="true" signature="1571:1617" placeholder="select * fro..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="1839:1885" placeholder="select * fro..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="2234:2268" placeholder="select branc..gbpuat_lob..." />
-            <marker date="1434184210432" expanded="true" signature="2907:2974" placeholder="select branc..gbpuat_lob..." />
-            <marker date="1434184210432" expanded="true" signature="3493:3539" placeholder="select * fro..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="3876:3931" placeholder="INSERT INTO ..." />
-            <marker date="1434184210432" expanded="true" signature="4064:4110" placeholder="select * fro..student_records..." />
-            <marker date="1434184210432" expanded="true" signature="4563:4664" placeholder="select * FRO..gbpuat_lob..." />
-            <marker date="1434184210432" expanded="true" signature="4610:4663" placeholder="select branc..alottment_records..." />
-          </folding>
+        <state line="30" column="13" selection-start="778" selection-end="778" vertical-scroll-proportion="0.6490066" vertical-offset="58" max-vertical-offset="795">
+          <folding />
         </state>
       </provider>
     </entry>
