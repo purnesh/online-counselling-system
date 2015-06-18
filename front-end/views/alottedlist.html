@@ -1,6 +1,6 @@
 <div class="container" ng-controller="dashboardHandler">
 <br />
-    <button class="align-right btn btn-lg btn-danger col-md-5 " ng-click="alottedStudents()">Fetch List</button>
+    <button class="hvr-sweep-to-left align-right btn btn-lg btn-danger col-md-5 " ng-click="alottedStudents()">Fetch List</button>
     <br /><br /><br /><br />
     <div class="col-md-5">
         <ul>
@@ -49,15 +49,15 @@
             </tr>
             <tr>
                 <td>
-                    All India Rank:
+                    Roll Number:
                 </td>
                 <td>
-                    {{details[2]| capitalize}}
+                    {{details[2]}}
                 </td>
             </tr>
             <tr>
                 <td>
-                    State/All India:
+                    All India Rank:
                 </td>
                 <td>
                     {{details[3]}}
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td>
-                    Category:
+                    State Rank:
                 </td>
                 <td>
                     {{details[4]}}
@@ -73,7 +73,7 @@
             </tr>
             <tr>
                 <td>
-                    Sub-Category:
+                    State:
                 </td>
                 <td>
                     {{details[5]}}
@@ -81,15 +81,39 @@
             </tr>
             <tr>
                 <td>
-                    Branch Alotted:
+                    Category:
                 </td>
                 <td>
-                    <b>{{details[6] | capitalize}}</b>
+                    {{details[6]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sub-Category:
+                </td>
+                <td>
+                    {{details[7]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Department:
+                </td>
+                <td>
+                    <b>{{details[8] | capitalize}}</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    College Name:
+                </td>
+                <td>
+                    <b>{{details[9] | capitalize}}</b>
                 </td>
             </tr>
 
         </table>
-
+    <a class="hvr-box-shadow-outset hvr-ripple-out" style="margin-top: 10px"><button class="btn btn-success">Print Allotment Letter</button></a>
     </div>
 
 </div>

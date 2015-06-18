@@ -17,6 +17,7 @@
 
     <!-- Vendor Stylesheets Start -->
     <link rel="stylesheet" href="content/vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="content/vendor/hover/hover-min.css">
     <link rel="stylesheet" href="content/user/css/dashboard-style.css">
     <link rel="stylesheet" href="content/user/css/signin.css">
     <link rel="stylesheet" href="content/user/css/footer-style.css">
@@ -41,7 +42,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li ng-repeat="navBarEntry in navBarEntries" ng-click="selectEntry($index)" ng-class="{active: $index==selectedEntry}"><a ng-href="{{navBarEntry.href}}" ng-bind="navBarEntry.name"></a></li>
+                <li ng-repeat="navBarEntry in navBarEntries" ng-click="selectEntry($index)" ng-class="{active: $index==selectedEntry} hvr-border-fade"><a ng-href="{{navBarEntry.href}}" ng-bind="navBarEntry.name"></a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

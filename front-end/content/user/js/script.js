@@ -188,6 +188,13 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: 'views/alottmentletter.html',
             controller: 'dashboardHandler'
         });
+    $stateProvider
+        .state('list_of_branches',
+        {
+            url: '/list_of_branches',
+            templateUrl: 'views/list_of_branches.html',
+            controller: 'dashboardHandler'
+        });
 
 }]);
 /*
@@ -428,9 +435,10 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
            //Registration Code here
     };
      */
+
     console.log("Test: Successful: Dashboard Application State Attained");
     $scope.studentDetailPage = 0;
-    $scope.listOfStudentsPage = 1;
+    $scope.listOfStudentsPage = 0;
     $scope.listOfAvailableChoicesPage = 0;
 
     $scope.listStudents = function(){
@@ -506,6 +514,11 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         $scope.details = b.query();
         console.log($scope.details);
 
+    };
+
+    $scope.fetchBranchList = function () {
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/list_of_branches/";
+        var b = $resource(fetchUrl);
     };
 });
 /*
