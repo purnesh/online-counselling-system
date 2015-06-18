@@ -1,0 +1,43 @@
+<div class="container" ng-controller="dashboardHandler">
+<br />
+    <button class="align-right btn btn-lg btn-danger col-md-5 " ng-click="fetchCollegeList()">Fetch College List</button>
+    <a href="#dashboard"><button class="hvr-shutter-in-horizontal align-right btn btn-lg btn-neutral col-md-offset-1 col-md-5">Return to Dashboard</button></a>
+    <br /><br /><br /><br />
+    <div class="col-md-5">
+        <ul>
+
+            <table class="table table-hover" ng-show="collegeListRetrieved">
+                <thead>
+                <tr>
+                    <th>College Name</th>
+                    <th>Fetch Details</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="x in collegeDetailsCollegeList">
+                    <td>{{x.name | capitalize}}</td>
+                    <td><button ng-click="fetchBranchListForCollege(x.code)" class="btn btn-default hvr-bounce-to-bottom">Branch List</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!--<li  style="list-style-type: none;">
+                <span class="col-md-7"></span><button ng-click="studentDetails(x.rank)" class="btn btn-default col-md-4" style="margin-left: 15px;">View Details</button>
+            </li-->
+        </ul>
+    </div>
+    <div class="col-md-6 col-md-offset-1">
+        <table class="table table-hover" >
+            <tr>
+                <td><b>Branch Name</b></td>
+            </tr>
+            <tr ng-repeat="branch in branchListForCollege">
+                <td>{{branch.branch_name  | capitalize}}</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+</div>

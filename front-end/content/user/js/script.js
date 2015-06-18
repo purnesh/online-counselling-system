@@ -189,10 +189,10 @@ ocs.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             controller: 'dashboardHandler'
         });
     $stateProvider
-        .state('list_of_branches',
+        .state('college_details',
         {
-            url: '/list_of_branches',
-            templateUrl: 'views/list_of_branches.html',
+            url: '/college_details',
+            templateUrl: 'views/college_details.html',
             controller: 'dashboardHandler'
         });
 
@@ -325,10 +325,11 @@ ocs.controller('navigationBarHandler', function($scope, globalDetails, $state) {
         },
 
         {
-            state: "dashboard",
+            state: "login",
             name: "Dashboard",
-            href: "#dashboard",
-            id: "dashboard-navbar"
+            href: "#login",
+            id: "dashboard-navbar",
+            controller: "dashboardHandler"
         }
     ];
 
@@ -440,6 +441,29 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
     $scope.studentDetailPage = 0;
     $scope.listOfStudentsPage = 0;
     $scope.listOfAvailableChoicesPage = 0;
+    if($scope.isAuthenticated == 0){
+        $state.go("login");
+    }
+
+    $scope.authenticationModule = function(username, password) {
+        console.log("Authentication Module Accessed");
+        if($scope.isAuthenticated == 1){
+            $state.go("dashboard");
+        }
+        else{
+            console.log("Authentication Request Received");
+            if(username == 'admin' && password=="admin"){
+                $scope.isAuthenticated = 1;
+                console.log("Authentication Successful");
+                console.log("Authentication Request Accepted");
+                $state.go("dashboard");
+            }
+            else{
+
+                console.log("Authentication Request Failed");
+            }
+        }
+    };
 
     $scope.listStudents = function(){
         console.log("Test: Successful: Counselling Platform Loaded");
@@ -516,9 +540,22 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
 
     };
 
-    $scope.fetchBranchList = function () {
-        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/list_of_branches/";
+    $scope.fetchCollegeList = function() {
+        $scope.collegeListRetrieved = 1;
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/college_list/";
         var b = $resource(fetchUrl);
+        $scope.collegeDetailsCollegeList = b.query();
+        console.log("College List Retrieval Successfully Complete");
+    };
+
+    $scope.fetchBranchListForCollege = function(collegeCode) {
+        var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/list_of_branches/" + collegeCode;
+        var b = $resource(fetchUrl);
+        var result = b.query();
+        $scope.branchListForCollege = result;
+        console.log($scope.branchListForCollege);
+        var testData = "Branch List Retrieval Successfully Complete for college " + collegeCode;
+        console.log(testData);
     };
 });
 /*
