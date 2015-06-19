@@ -536,8 +536,9 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var fetchUrl = "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/api/alottment_letter/" + rank;
         var b = $resource(fetchUrl);
         $scope.details = b.query();
-        console.log($scope.details);
-
+        var a = "Details fetched for rank = " + rank;
+        $scope.allotedStudentRank = rank;
+        console.log(a);
     };
 
     $scope.fetchCollegeList = function() {
@@ -564,9 +565,10 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         window.location.href=visitUrl;
     };
 
-    $scope.print_allotment_record = function(branchCode) {
-        var visitUrl= "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/reports/allotment_letter/" + $scope.currentStudentRank;
+    $scope.printAllotmentRecord = function() {
+        var visitUrl= "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/reports/allotment_letter/" + $scope.allotedStudentRank;
         //http://localhost/project/back-end/index.php/reports/allotment_letter/2654
+        console.log(visitUrl);
         window.location.href=visitUrl;
     };
 
