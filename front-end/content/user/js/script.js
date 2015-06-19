@@ -553,13 +553,18 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
         var b = $resource(fetchUrl);
         var result = b.query();
         $scope.branchListForCollege = result;
+        $scope.currentCollegeCode = collegeCode;
         console.log($scope.branchListForCollege);
         var testData = "Branch List Retrieval Successfully Complete for college " + collegeCode;
         console.log(testData);
     };
+
+    $scope.print_report = function(branchCode) {
+        window.location.href="http://www.google.com/" + $scope.currentCollegeCode;
+    }
 });
 /*
- * CONTROLLER dashboardHandler BEGINS
+ * CONTROLLER dashboardHandler ENDS
  * This function will handle dashboard related requests
  * =====================================
  * */

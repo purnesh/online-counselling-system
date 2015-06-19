@@ -16,7 +16,7 @@
                 <tbody>
                 <tr ng-repeat="x in collegeDetailsCollegeList">
                     <td>{{x.name | capitalize}}</td>
-                    <td><button ng-click="fetchBranchListForCollege(x.code)" class="btn btn-default hvr-bounce-to-bottom">Branch List</td>
+                    <td><button ng-click="fetchBranchListForCollege(x.code)" class="btn btn-default hvr-bounce-to-bottom">Branch List</button></td>
                 </tr>
                 </tbody>
             </table>
@@ -30,9 +30,11 @@
         <table class="table table-hover" >
             <tr>
                 <td><b>Branch Name</b></td>
+                <td><b>Fetch Details</b></td>
             </tr>
             <tr ng-repeat="branch in branchListForCollege">
                 <td>{{branch.branch_name  | capitalize}}</td>
+                <td><button ng-click="print_report(branch.branch_code)" class="btn btn-default hvr-bounce-to-bottom">Print Report</button></td>
             </tr>
 
 

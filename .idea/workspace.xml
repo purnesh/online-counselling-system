@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3118317b-9d75-4022-8c46-d75f7499879a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/front-end/views/list_of_branches.html" afterPath="$PROJECT_DIR$/front-end/views/college_details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/alottedlist.html" afterPath="$PROJECT_DIR$/front-end/views/alottedlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/dashboard.html" afterPath="$PROJECT_DIR$/front-end/views/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/index.html" afterPath="$PROJECT_DIR$/front-end/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/list.html" afterPath="$PROJECT_DIR$/front-end/views/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/login.html" afterPath="$PROJECT_DIR$/front-end/views/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/application/controllers/Reports.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/application/views/branch_wise_report.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/college_details.html" afterPath="$PROJECT_DIR$/front-end/views/college_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/.idea/workspace.xml" afterPath="$PROJECT_DIR$/back-end/.idea/workspace.xml" />
@@ -45,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="college_details.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="college_details.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-end/views/college_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5595855" vertical-offset="156" max-vertical-offset="735">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state vertical-scroll-proportion="-16.0" vertical-offset="156" max-vertical-offset="765">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7962" max-vertical-offset="8775">
-              <caret line="555" column="27" selection-start-line="555" selection-start-column="27" selection-end-line="555" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.84577113" vertical-offset="7920" max-vertical-offset="8850">
+              <caret line="562" column="30" selection-start-line="562" selection-start-column="30" selection-end-line="562" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -121,8 +119,8 @@
         <option value="$PROJECT_DIR$/front-end/index.html" />
         <option value="$PROJECT_DIR$/front-end/views/alottedlist.html" />
         <option value="$PROJECT_DIR$/front-end/views/list.html" />
-        <option value="$PROJECT_DIR$/front-end/content/user/js/script.js" />
         <option value="$PROJECT_DIR$/front-end/views/college_details.html" />
+        <option value="$PROJECT_DIR$/front-end/content/user/js/script.js" />
       </list>
     </option>
   </component>
@@ -219,6 +217,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front-end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,7 +544,11 @@
       <created>1434321589805</created>
       <updated>1434321589805</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Commit 51- Branch Listing option available. Login system introduced. UI changes in dashboard.">
+      <created>1434667671032</created>
+      <updated>1434667671032</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -543,6 +575,7 @@
     <frame x="45" y="24" width="1321" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -558,7 +591,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2314308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -599,7 +631,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Commit 18 - Front end working fine. &#10;&#10;Front end with basic routing is working fine. Work on revamping the signin mechanism begins." />
     <MESSAGE value="Commit 20 - JWT across CORS using AngularJS tested successfully. &#10;&#10;JWT tokens were created and tested to be working fine in AngularJS." />
     <MESSAGE value="Commit 21 - UI Changes on the Signin Page. &#10;&#10;Rounded corners implemented on the signin page. Also, the edges for the button have been smoothened. Work on full fledged authentication mechanism begins!" />
     <MESSAGE value="Commit 22 - UI Changes on the Display Page. &#10;&#10;Table boundaries added. Still struggling with the state details." />
@@ -624,26 +655,13 @@
     <MESSAGE value="Commit 47 - Code Complete&#10;&#10;Starting work on the alottment letter page." />
     <MESSAGE value="Commit 48 - UI for counselling platform has been improved. Introduction of Colleges has been done&#10;&#10;New College (CBSH) was introduced in the OCS. Also, Bio tech was added as a branch for this new college." />
     <MESSAGE value="Commit 49 - Seat allocation bug fixed.&#10;&#10;There was a bug in seat allocation. The seats are now deducted and exhausted from the back end as soon as the allocation is done on the front end." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 49 - Seat allocation bug fixed.&#10;&#10;There was a bug in seat allocation. The seats are now deducted and exhausted from the back end as soon as the allocation is done on the front end." />
+    <MESSAGE value="Commit 51- Branch Listing option available. Login system introduced. UI changes in dashboard." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 51- Branch Listing option available. Login system introduced. UI changes in dashboard." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front-end/content/user/js/jsTests/script_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/content/user/css/footer-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -929,8 +947,7 @@
         <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
           <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -956,7 +973,7 @@
         <state vertical-scroll-proportion="0.07772021" vertical-offset="0" max-vertical-offset="1890">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="159" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,18 +1002,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
+    <entry file="file://$PROJECT_DIR$/front-end/views/college_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7962" max-vertical-offset="8775">
-          <caret line="555" column="27" selection-start-line="555" selection-start-column="27" selection-end-line="555" selection-end-column="27" />
+        <state vertical-scroll-proportion="-16.0" vertical-offset="156" max-vertical-offset="765">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/views/college_details.html">
+    <entry file="file://$PROJECT_DIR$/front-end/content/vendor/bootstrap/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5595855" vertical-offset="156" max-vertical-offset="735">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/content/vendor/bootstrap/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024875622" vertical-offset="68985" max-vertical-offset="88590">
+          <caret line="4600" column="0" selection-start-line="4600" selection-start-column="0" selection-end-line="4600" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84577113" vertical-offset="7920" max-vertical-offset="8850">
+          <caret line="562" column="30" selection-start-line="562" selection-start-column="30" selection-end-line="562" selection-end-column="30" />
           <folding />
         </state>
       </provider>
