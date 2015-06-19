@@ -5940,43 +5940,43 @@
         <table class="col-md-12">
             <tr>
                 <td class="col-md-4 col-md-offset-1">Roll Number: </td>
-                <td class="col-md-6 col-md-offset-1">524645</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['roll_number'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">Name: </td>
-                <td class="col-md-6 col-md-offset-1">Aditya Tomar</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['fullname'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">DOB: </td>
-                <td class="col-md-6 col-md-offset-1">28-05-1993</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['dob'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">Father's Name: </td>
-                <td class="col-md-6 col-md-offset-1">R. P. Tomar</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['fathername'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">All India Rank: </td>
-                <td class="col-md-6 col-md-offset-1">21666</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['rank'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">State Quota: </td>
-                <td class="col-md-6 col-md-offset-1">UK</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['state'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">Category: </td>
-                <td class="col-md-6 col-md-offset-1">SC</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['category'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">Sub-Category: </td>
-                <td class="col-md-6 col-md-offset-1">OP</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $student[0]['subcategory'];?></td>
             </tr>
             <tr>
                 <td class="col-md-4">Course: </td>
-                <td class="col-md-6 col-md-offset-1">Information Technology</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $branch_name;?></td>
             </tr>
             <tr>
                 <td class="col-md-4">Allotted College: </td>
-                <td class="col-md-6 col-md-offset-1">College of Technology, Pantnagar</td>
+                <td class="col-md-6 col-md-offset-1"><?php echo $college_name;?></td>
             </tr>
 
         </table>

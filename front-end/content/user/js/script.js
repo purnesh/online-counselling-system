@@ -560,8 +560,16 @@ ocs.controller('dashboardHandler', function ($scope, globalDetails, $http, $loca
     };
 
     $scope.print_report = function(branchCode) {
-        window.location.href="http://www.google.com/" + $scope.currentCollegeCode;
-    }
+        var visitUrl= "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/reports/branch_allotment_report/" + $scope.currentCollegeCode + "/" + branchCode;
+        window.location.href=visitUrl;
+    };
+
+    $scope.print_allotment_record = function(branchCode) {
+        var visitUrl= "http://"+ globalDetails.ruthLessDetail +"/project/back-end/index.php/reports/allotment_letter/" + $scope.currentStudentRank;
+        //http://localhost/project/back-end/index.php/reports/allotment_letter/2654
+        window.location.href=visitUrl;
+    };
+
 });
 /*
  * CONTROLLER dashboardHandler ENDS

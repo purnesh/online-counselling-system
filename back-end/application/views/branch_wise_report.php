@@ -5925,89 +5925,41 @@
     <div class="address-of-authority text-center">Government Girls Polytechnic, Premnagar, Sudhowala</div>
     <div class="address-of-authority text-center">Dehradun, Uttarakhand PIN: 248007</div>
     <br/>
-    <div class="name-and-year text-center"><h3>Uttarakhand State Counselling - 2011</h3></div>
-    <div class="round-detail text-center" style="margin-top: -5px;">III - Round</div>
-    <div class="official-detail">
-        <span class="text-left">No.</span>
-        <span class="text-right " style="float:right;">Admission: PROVISIONAL</span>
-    </div>
-    <div class="notice-number">UTU/Admission/BTECH/2015</div>
-    <br />
+    <div class="name-and-year text-center"><h3><?php echo $branch_name;?></h3></div>
+    <div class="round-detail text-center" style="margin-top: -5px;"><?php echo $college_name;?></div>
     <br />
 
     <div class="report col-md-12">
         <br />
+        <table class="col-md-12" style="border-bottom: 2px solid;">
+            <tr>
+                <td class="col-md-1"><b>Roll No.</b></td>
+                <td class="col-md-3"><b>Full Name</b></td>
+                <td class="col-md-3"><b>Father's Name</b></td>
+                <td class="col-md-1"><b>AIR</b></td>
+                <td class="col-md-1"><b>SR</b></td>
+                <td class="col-md-1"><b>State</b></td>
+                <td class="col-md-1"><b>Cat.</b></td>
+                <td class="col-md-1"><b>Sub-Cat.</b></td>
+            </tr>
+            </table>
         <table class="col-md-12">
+        <?php foreach ($report as $row):?>
             <tr>
-                <td class="col-md-4 col-md-offset-1">Roll Number: </td>
-                <td class="col-md-6 col-md-offset-1">524645</td>
+                <td class="col-md-1"><?php echo $row['roll_number'];?></td>
+                <td class="col-md-3"><?php echo $row['fullname'];?></td>
+                <td class="col-md-3"><?php echo $row['fathername'];?></td>
+                <td class="col-md-1"><?php echo $row['rank'];?></td>
+                <td class="col-md-1"><?php echo $row['state_rank'];?></td>
+                <td class="col-md-1"><?php echo $row['state'];?></td>
+                <td class="col-md-1"><?php echo $row['category'];?></td>
+                <td class="col-md-1"><?php echo $row['subcategory'];?></td>
             </tr>
-            <tr>
-                <td class="col-md-4">Name: </td>
-                <td class="col-md-6 col-md-offset-1">Aditya Tomar</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">DOB: </td>
-                <td class="col-md-6 col-md-offset-1">28-05-1993</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">Father's Name: </td>
-                <td class="col-md-6 col-md-offset-1">R. P. Tomar</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">All India Rank: </td>
-                <td class="col-md-6 col-md-offset-1">21666</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">State Quota: </td>
-                <td class="col-md-6 col-md-offset-1">UK</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">Category: </td>
-                <td class="col-md-6 col-md-offset-1">SC</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">Sub-Category: </td>
-                <td class="col-md-6 col-md-offset-1">OP</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">Course: </td>
-                <td class="col-md-6 col-md-offset-1">Information Technology</td>
-            </tr>
-            <tr>
-                <td class="col-md-4">Allotted College: </td>
-                <td class="col-md-6 col-md-offset-1">College of Technology, Pantnagar</td>
-            </tr>
-
+        <?php endforeach;?>
         </table>
-    </div>
-    <br />
-    <br />
-    <div class="declaration col-md-12 text-center">He/She has been
-        asked to report at the Institute/College on or before 29/June/2015
-        at 10:00AM and complete the other formalities of admission there. He/She
-        will deposit TC/Migration Certificate at the institute.
-    </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="signature-col">
-        <span class="text-center" style="float:left;"><u>Signature of <br />Institute Representative</u></span>
-        <span class="text-center" style="float:right;"><u>Signature of Govt. Nominee</u></span>
+        <div class="text-center">End of Result</div>
     </div>
 </div>
 
 </body>
 </html>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: hokage
- * Date: 19/6/15
- * Time: 10:09 AM
- */
-
-?>
