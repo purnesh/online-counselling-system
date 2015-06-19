@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3118317b-9d75-4022-8c46-d75f7499879a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/views/alottedlist.html" afterPath="$PROJECT_DIR$/front-end/views/alottedlist.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/content/user/js/script.js" afterPath="$PROJECT_DIR$/front-end/content/user/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/.idea/workspace.xml" afterPath="$PROJECT_DIR$/back-end/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +61,8 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2039801" vertical-offset="8397" max-vertical-offset="9000">
-              <caret line="568" column="146" selection-start-line="568" selection-start-column="146" selection-end-line="568" selection-end-column="146" />
+            <state vertical-scroll-proportion="0.5273632" vertical-offset="8397" max-vertical-offset="9015">
+              <caret line="581" column="0" selection-start-line="581" selection-start-column="0" selection-end-line="581" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -559,7 +557,11 @@
       <created>1434694304557</created>
       <updated>1434694304557</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Commit 53- Project Complete">
+      <created>1434696830003</created>
+      <updated>1434696830003</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -586,6 +588,7 @@
     <frame x="45" y="24" width="1321" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -601,7 +604,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2314308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -642,7 +644,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Commit 21 - UI Changes on the Signin Page. &#10;&#10;Rounded corners implemented on the signin page. Also, the edges for the button have been smoothened. Work on full fledged authentication mechanism begins!" />
     <MESSAGE value="Commit 22 - UI Changes on the Display Page. &#10;&#10;Table boundaries added. Still struggling with the state details." />
     <MESSAGE value="Commit 26 - Refactored front end to be more semantic &#10;&#10;Work on parametrized display of data has started" />
     <MESSAGE value="Commit 27 - Display UI and routing improved.  &#10;&#10;Display page now dynamically uploads and sets data. Retrieval of data using objects remains." />
@@ -667,7 +668,8 @@
     <MESSAGE value="Commit 49 - Seat allocation bug fixed.&#10;&#10;There was a bug in seat allocation. The seats are now deducted and exhausted from the back end as soon as the allocation is done on the front end." />
     <MESSAGE value="Commit 51- Branch Listing option available. Login system introduced. UI changes in dashboard." />
     <MESSAGE value="Commit 52- Allltment Letter Design and API complete. Configuration with NG remains" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 52- Allltment Letter Design and API complete. Configuration with NG remains" />
+    <MESSAGE value="Commit 53- Project Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 53- Project Complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1029,8 +1031,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-end/content/user/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2039801" vertical-offset="8397" max-vertical-offset="9000">
-          <caret line="568" column="146" selection-start-line="568" selection-start-column="146" selection-end-line="568" selection-end-column="146" />
+        <state vertical-scroll-proportion="0.5273632" vertical-offset="8397" max-vertical-offset="9015">
+          <caret line="581" column="0" selection-start-line="581" selection-start-column="0" selection-end-line="581" selection-end-column="0" />
           <folding />
         </state>
       </provider>
